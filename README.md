@@ -4,23 +4,25 @@ Projeto de Programação realizado pelos alunos: Antônio Gabriel e Matheus Leon
 
 ## Índice
 
-1. [Tela de Login](#tela-de-login)
-2. [Tela de Registro](#tela-de-registro)
-3. [Tela de Redefinição de Senha](#tela-de-redefinicao-de-senha)
-4. [Tela de Sobre Nós](#tela-de-sobre-nos)
-5. [Tela de Suporte](#tela-de-suporte)
-6. [Tela de User](#tela-de-user)
-7. [Tela de Adição de Senha](#tela-de-adicao-de-senha)
-8. [Tela de Detalhamento das Senhas](#tela-de-detalhamento-das-senhas)
-9. [Tela de Gerenciamento de Senhas](#tela-de-gerenciamento-de-senhas)
-10. [Rodapé e Recursos Comuns](#rodape-e-recursos-comuns)
+- [Cyber-Security-Lock](#cyber-security-lock)
+  - [Índice](#índice)
+  - [Tela de Login](#tela-de-login)
+  - [Tela de Registro](#tela-de-registro)
+  - [Tela de Redefinição de Senha](#tela-de-redefinição-de-senha)
+  - [Tela de Sobre Nós](#tela-de-sobre-nós)
+  - [Tela de Suporte](#tela-de-suporte)
+  - [Tela de User](#tela-de-user)
+  - [Tela de Adição de Senha](#tela-de-adição-de-senha)
+  - [Tela de Detalhamento das Senhas](#tela-de-detalhamento-das-senhas)
+  - [Tela de Gerenciamento de Senhas](#tela-de-gerenciamento-de-senhas)
+  - [Rodapé e Recursos Comuns](#rodapé-e-recursos-comuns)
 
 ## Tela de Login
 
-- [ x ] **Campos**: Email e Senha
-- [ x ] **Botão de Enviar**: Envia as credenciais para validação.
+- [x] **Campos**: Email e Senha
+- [x] **Botão de Enviar**: Envia as credenciais para validação.
 - [ ] **Validação**: Valida o usuário e a senha.
-- [ x ] **Botão "Esqueceu a senha?"**: Redireciona para a tela de recuperação de senha.
+- [x] **Botão "Esqueceu a senha?"**: Redireciona para a tela de recuperação de senha.
 
 ## Tela de Registro
 
