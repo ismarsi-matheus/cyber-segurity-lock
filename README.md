@@ -80,12 +80,13 @@ Projeto de Programação realizado pelos alunos: Antônio Gabriel e Matheus Leon
 
 - [ ] **Rodapé**: Em todas as telas, o rodapé será fixo com os seguintes itens:
   - [ ] **Redes Sociais**:
-    - [ ] WhatsApp
-    - [ ] Email
+    - [x] WhatsApp
+    - [x] Email
     - [ ] X (ex-Twitter)
-    - [ ] Instagram
+    - [x] Instagram
     - [ ] LinkedIn
   - [ ] **Botões**:
-    - [ ] **Suporte**: Leva para a tela de suporte.
-    - [ ] **Sobre Nós**: Leva para a tela de sobre nós.
+    - [x] **Suporte**: Leva para a tela de suporte.
+    - [x] **Sobre Nós**: Leva para a tela de sobre nós.
+    - [ ] **Linkar Botões**:Ao clicar nos botões ele levará as telas de suporte e sobre nós.
   - [ ] **Texto de Direitos Autorais**: No centro do rodapé, exibindo a frase "Todos os direitos reservados".
