@@ -31,6 +31,15 @@ na container terá um filtro de a-z e com data de modificação
 dentro do container do lado do campo das senhas ,terá um botão de edição que vai para a tela de detalhamento 
 na tela terá um botão de adicionar a senha que vai para a tela de adição de senha 
 ainda na tela terá um menu de hambúguer com 4 campos :notificação ,suporte ,sobre nós e sugestão 
-e 
+no campo de suporte ele irá pra tela de suporte 
+no campo de sobre nós ele irá na tela correspondente 
+e encima do container das senhas terá um "pesquisar" caso o cliente queira fazer uma pesquisa específica 
+e por cima da barra de pesquisa terá o logo do site CSL 
+## Todas as Telas 
+em todas as telas terao um rodapé igual com as redes sociais:whatsapp,E-mail,X(ex-twitter),instagram e Linkedin,isso do lado esquerdo 
+no lado direito terá dois botões:suporte e sobre nós aonde ao clicar levará para a respectiva tela no lado direito 
+agora no meio embaixo como a última coisa da tela terá um texto dizendo dos direitos autorais reservados 
+
+
 
 
