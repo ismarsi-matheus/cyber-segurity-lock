@@ -11,5 +11,6 @@ campos de email,nome de usuario ,senha ,confirme a senha e CPF
 validação dos dados de email e CPF 
 ## Tela de redefinição de senha 
 campos de CPF,email ,nova senha ,confirme a senha 
-validação dos dados CPF e email 
+validação dos dados CPF e email
+## Tela de sobre nós 
 
