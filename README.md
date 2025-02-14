@@ -16,5 +16,8 @@ validação dos dados CPF e email
 container com um texto dizendo quem nós somos (alunos e o que estamos fazendo)
 botão de voltar 
 ## Tela de Suporte 
+container com perguntas recentes e com um campo para fazer a pergunta e com um botão de voltar 
+## Tela de user 
+com um container contendo as informações do usuario que são elas:
 
 
