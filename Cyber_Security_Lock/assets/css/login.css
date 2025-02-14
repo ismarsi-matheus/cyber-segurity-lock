@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e0f7fa;
-    background-image: url('https://placehold.co/1920x1080/blue/white&text=Background+Image');
+    background-image: url('../img/introducao.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

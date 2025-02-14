@@ -20,49 +20,40 @@ body {
     width: 100%;
     object-fit: cover;
     background-size: cover;
-    /* a imagem de fundo cobre toda a tela */
     background-position: center;
-    /* centraliza a imagem de fundo */
     z-index: 1;
 }
 
 .animacao {
     position: absolute;
     top: 10px;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 450px;
-    /* ajuste o tamanho conforme necessário */
     height: 450px;
-    /* ajuste o tamanho conforme necessário */
     background-size: cover;
     background-position: center;
     z-index: 2;
     animation: rotate 45s linear infinite;
 }
 
-
 @keyframes rotate {
     from {
         transform: rotateZ(0deg);
-        /* Começa com 0 graus */
     }
 
     to {
         transform: rotateZ(360deg);
-        /* Gira até 360 graus */
     }
 }
 
 .btn_login {
     position: absolute;
     top: 230px;
-    left: 51%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 150px;
-    /* ajuste o tamanho conforme necessário */
     height: 150px;
-    /* ajuste o tamanho conforme necessário */
     background-size: cover;
     background-position: center;
     z-index: 3;
@@ -70,18 +61,14 @@ body {
 
 h1 {
     z-index: 4;
-    display: flex;
     position: relative;
     font-size: 80px;
     margin-top: 470px;
-
     background-image: linear-gradient(to bottom, hwb(293 22% 18%), rgb(3, 195, 253));
     -webkit-background-clip: text;
-    /* Aplica o degradê ao texto */
     color: transparent;
     transform: scaleX(1.5);
 }
-
 
 .contato {
     z-index: 4;
@@ -96,22 +83,18 @@ h1 {
 
 ul li a {
     color: black;
-
 }
 
-ul li a :hover {
+ul li a:hover {
     color: white;
 }
-
 
 .sobre_nos {
     z-index: 4;
     display: flex;
     position: absolute;
     bottom: 20px;
-
     right: 20px;
-    
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -120,7 +103,6 @@ ul li a :hover {
     transition: background-color 0.3s ease;
     background-color: black;
     color: white;
-
 }
 
 .suporte {
@@ -128,9 +110,7 @@ ul li a :hover {
     display: flex;
     position: absolute;
     bottom: 20px;
-   
     right: 150px;
-   
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -139,4 +119,81 @@ ul li a :hover {
     transition: background-color 0.3s ease;
     background-color: black;
     color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        margin-top: 300px;
+    }
+
+    .animacao {
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn_login {
+        width: 120px;
+        height: 120px;
+        top: 200px;
+    }
+
+    .contato {
+        margin-left: 0;
+        gap: 15px;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .contato li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .suporte, .sobre_nos {
+        font-size: 14px;
+        padding: 8px 15px;
+        right: 10px;
+    }
+
+    .suporte {
+        right: 80px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (como celulares) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    .animacao {
+        width: 250px;
+        height: 250px;
+    }
+
+    .btn_login {
+        width: 100px;
+        height: 100px;
+        top: 150px;
+    }
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .suporte, .sobre_nos {
+        font-size: 14px;
+        padding: 8px 15px;
+        right: 10px;
+    }
+
+    .suporte {
+        right: 0;
+    }
 }
