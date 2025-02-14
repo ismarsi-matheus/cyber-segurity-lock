@@ -17,10 +17,10 @@ Projeto de Programação realizado pelos alunos: Antônio Gabriel e Matheus Leon
 
 ## Tela de Login
 
-- [x] **Campos**: Email e Senha
-- [x] **Botão de Enviar**: Envia as credenciais para validação.
+- [ x ] **Campos**: Email e Senha
+- [ x ] **Botão de Enviar**: Envia as credenciais para validação.
 - [ ] **Validação**: Valida o usuário e a senha.
-- [x] **Botão "Esqueceu a senha?"**: Redireciona para a tela de recuperação de senha.
+- [ x ] **Botão "Esqueceu a senha?"**: Redireciona para a tela de recuperação de senha.
 
 ## Tela de Registro
 
