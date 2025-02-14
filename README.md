@@ -1,45 +1,89 @@
-# cyber-segurity-lock
-PI de programação feito pelos os alunos :Antônio gabriel e Matheus leonardo 
-# Lista de Pi
-## tela de Login 
-forms de email e senha 
-validação de senha e usuario 
-botão de enviar 
-botão de "esqueceu a senha?"
+# Cyber-Security-Lock
+
+Projeto de Programação realizado pelos alunos: Antônio Gabriel e Matheus Leonardo.
+
+## Índice
+
+1. [Tela de Login](#tela-de-login)
+2. [Tela de Registro](#tela-de-registro)
+3. [Tela de Redefinição de Senha](#tela-de-redefinicao-de-senha)
+4. [Tela de Sobre Nós](#tela-de-sobre-nos)
+5. [Tela de Suporte](#tela-de-suporte)
+6. [Tela de User](#tela-de-user)
+7. [Tela de Adição de Senha](#tela-de-adicao-de-senha)
+8. [Tela de Detalhamento das Senhas](#tela-de-detalhamento-das-senhas)
+9. [Tela de Gerenciamento de Senhas](#tela-de-gerenciamento-de-senhas)
+10. [Rodapé e Recursos Comuns](#rodape-e-recursos-comuns)
+
+## Tela de Login
+
+- [ ] **Campos**: Email e Senha
+- [ ] **Botão de Enviar**: Envia as credenciais para validação.
+- [ ] **Validação**: Valida o usuário e a senha.
+- [ ] **Botão "Esqueceu a senha?"**: Redireciona para a tela de recuperação de senha.
+
 ## Tela de Registro
-campos de email,nome de usuario ,senha ,confirme a senha e CPF
-validação dos dados de email e CPF 
-## Tela de Redefinição de Senha 
-campos de CPF,email ,nova senha ,confirme a senha 
-validação dos dados CPF e email
+
+- [ ] **Campos**: Email, Nome de Usuário, Senha, Confirme a Senha, CPF
+- [ ] **Validação**: Verificação dos dados de email e CPF.
+
+## Tela de Redefinição de Senha
+
+- [ ] **Campos**: CPF, Email, Nova Senha, Confirme a Senha
+- [ ] **Validação**: Verificação do CPF e Email.
+
 ## Tela de Sobre Nós
-container com um texto dizendo quem nós somos (alunos e o que estamos fazendo)
-botão de voltar 
-## Tela de Suporte 
-container com perguntas recentes e com um campo para fazer a pergunta e com um botão de voltar 
-## Tela de user 
-com um container contendo as informações do usuario que são elas:Nome,Nome de Usuario ,email,CPF e Senha 
-com um botão de voltar 
-## Tela de Adição de Senha 
-campos de nome/dominio da onde vai ser a senha e outro campo de senha para adicionar a senha do dominio 
-## Tela de Detalhamento das Senhas 
-campos de dominio/nome da onde a senha é 
-e com outro campo de senha ,mostrando a senha do dominio 
-## Tela de Gerenciamento de Senhas 
-container com campos com a senhas do usuario mostrando o dominio e a senha com a senha em asterisco com um olho para clicar e revelar a senha 
-na container terá um filtro de a-z e com data de modificação 
-dentro do container do lado do campo das senhas ,terá um botão de edição que vai para a tela de detalhamento 
-na tela terá um botão de adicionar a senha que vai para a tela de adição de senha 
-ainda na tela terá um menu de hambúguer com 4 campos :notificação ,suporte ,sobre nós e sugestão 
-no campo de suporte ele irá pra tela de suporte 
-no campo de sobre nós ele irá na tela correspondente 
-e encima do container das senhas terá um "pesquisar" caso o cliente queira fazer uma pesquisa específica 
-e por cima da barra de pesquisa terá o logo do site CSL 
-## Todas as Telas 
-em todas as telas terao um rodapé igual com as redes sociais:whatsapp,E-mail,X(ex-twitter),instagram e Linkedin,isso do lado esquerdo 
-no lado direito terá dois botões:suporte e sobre nós aonde ao clicar levará para a respectiva tela no lado direito 
-agora no meio embaixo como a última coisa da tela terá um texto dizendo dos direitos autorais reservados 
 
+- [ ] **Descrição**: Texto explicando quem somos (alunos e o que estamos fazendo).
+- [ ] **Botão de Voltar**: Retorna à tela anterior.
 
+## Tela de Suporte
 
+- [ ] **Descrição**: Exibe perguntas frequentes.
+- [ ] **Campo de Pergunta**: Permite ao usuário enviar uma nova pergunta.
+- [ ] **Botão de Voltar**: Retorna à tela anterior.
 
+## Tela de User
+
+- [ ] **Informações do Usuário**: Nome, Nome de Usuário, Email, CPF e Senha.
+- [ ] **Botão de Voltar**: Retorna à tela anterior.
+
+## Tela de Adição de Senha
+
+- [ ] **Campos**: Nome/Domínio (onde a senha será usada) e Campo de Senha.
+- [ ] **Função**: Adiciona uma nova senha para um domínio específico.
+
+## Tela de Detalhamento das Senhas
+
+- [ ] **Campos**: Nome/Domínio e Senha.
+- [ ] **Função**: Exibe detalhes da senha para o domínio específico.
+
+## Tela de Gerenciamento de Senhas
+
+- [ ] **Descrição**: Exibe as senhas do usuário, com o domínio e a senha mascarada com asteriscos.
+- [ ] **Funções**:
+  - [ ] **Olho**: Revela a senha ao clicar.
+  - [ ] **Filtro**: Ordena senhas de A-Z e por data de modificação.
+  - [ ] **Botão de Edição**: Redireciona para a tela de detalhamento da senha.
+  - [ ] **Botão de Adição de Senha**: Redireciona para a tela de adição de senha.
+- [ ] **Menu de Hambúrguer**: Com 4 opções:
+  - [ ] **Notificação**: Exibe notificações.
+  - [ ] **Suporte**: Redireciona para a tela de suporte.
+  - [ ] **Sobre Nós**: Redireciona para a tela de sobre nós.
+  - [ ] **Sugestão**: Permite enviar sugestões.
+- [ ] **Barra de Pesquisa**: Localizada acima do container de senhas, permite buscar senhas específicas.
+- [ ] **Logo do CSL**: Exibido acima da barra de pesquisa.
+
+## Rodapé e Recursos Comuns
+
+- [ ] **Rodapé**: Em todas as telas, o rodapé será fixo com os seguintes itens:
+  - [ ] **Redes Sociais**:
+    - [ ] WhatsApp
+    - [ ] Email
+    - [ ] X (ex-Twitter)
+    - [ ] Instagram
+    - [ ] LinkedIn
+  - [ ] **Botões**:
+    - [ ] **Suporte**: Leva para a tela de suporte.
+    - [ ] **Sobre Nós**: Leva para a tela de sobre nós.
+  - [ ] **Texto de Direitos Autorais**: No centro do rodapé, exibindo a frase "Todos os direitos reservados".
