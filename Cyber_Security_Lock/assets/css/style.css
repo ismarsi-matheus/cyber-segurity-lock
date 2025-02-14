@@ -1,6 +1,142 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-body{
-    
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
 
+.img_fundo {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    /* a imagem de fundo cobre toda a tela */
+    background-position: center;
+    /* centraliza a imagem de fundo */
+    z-index: 1;
+}
+
+.animacao {
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    /* ajuste o tamanho conforme necessário */
+    height: 450px;
+    /* ajuste o tamanho conforme necessário */
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    animation: rotate 45s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+        /* Começa com 0 graus */
+    }
+
+    to {
+        transform: rotateZ(360deg);
+        /* Gira até 360 graus */
+    }
+}
+
+.btn_login {
+    position: absolute;
+    top: 230px;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    /* ajuste o tamanho conforme necessário */
+    height: 150px;
+    /* ajuste o tamanho conforme necessário */
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+}
+
+h1 {
+    z-index: 4;
+    display: flex;
+    position: relative;
+    font-size: 80px;
+    margin-top: 470px;
+
+    background-image: linear-gradient(to bottom, hwb(293 22% 18%), rgb(3, 195, 253));
+    -webkit-background-clip: text;
+    /* Aplica o degradê ao texto */
+    color: transparent;
+    transform: scaleX(1.5);
+}
+
+
+.contato {
+    z-index: 4;
+    display: flex;
+    position: relative;
+    list-style: none;
+    gap: 30px;
+    margin-left: -350px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+ul li a {
+    color: black;
+
+}
+
+ul li a :hover {
+    color: white;
+}
+
+
+.sobre_nos {
+    z-index: 4;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+
+    right: 20px;
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: black;
+    color: white;
+
+}
+
+.suporte {
+    z-index: 4;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+   
+    right: 150px;
+   
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: black;
+    color: white;
 }
