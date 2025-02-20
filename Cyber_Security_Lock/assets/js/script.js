@@ -5,11 +5,11 @@ document.getElementById("toggleSenha").addEventListener("click", function () {
     // Alterna entre "password" e "text"
     if (inputSenha.type === "password") {
         inputSenha.type = "text";
-        icone.classList.remove("bi-eye-slash-fill"); // Remove ícone de olho fechado
-        icone.classList.add("bi-eye-fill"); // Adiciona ícone de olho aberto
+        icone.classList.remove("bi-eye-slash"); // Remove ícone de olho fechado
+        icone.classList.add("bi-eye"); // Adiciona ícone de olho aberto
     } else {
         inputSenha.type = "password";
-        icone.classList.remove("bi-eye-fill"); // Remove ícone de olho aberto
-        icone.classList.add("bi-eye-slash-fill"); // Adiciona ícone de olho fechado
+        icone.classList.remove("bi-eye"); // Remove ícone de olho aberto
+        icone.classList.add("bi-eye-slash"); // Adiciona ícone de olho fechado
     }
 });

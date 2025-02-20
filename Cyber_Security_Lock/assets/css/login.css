@@ -46,7 +46,7 @@ body {
     height: 100%;
     background-color: #ddd;
     border: none;
-    outline: none;
+    outline: 0;
     font-size: 16px;
     color: #000;
     padding: 20px 45px 20px 20px;
@@ -152,5 +152,4 @@ footer p {
     font-size: 12px; /* Tamanho da fonte menor */
     margin-top: 10px; /* Espaçamento acima do texto */
     text-align: right; /* Alinhamento do texto à direita */
-    max-width: 400px; /* Largura máxima para evitar que o texto ocupe toda a tela */
 }

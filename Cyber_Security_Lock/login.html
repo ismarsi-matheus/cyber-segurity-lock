@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <title>login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <title>Login</title>
 </head>
 <body>
     <section id="secao_container">
-    <main class="container">
-        <form >
-            <h1>Login Cyber</h1>
-            <div class="input_box">
-                <input placeholder="Usuário" type="email">
-                <i class="bi bi-person"></i>
-            </div>
-            <div class="input_box">
-                <input type="password" id="senha" placeholder="Digite sua senha">
-                <i class="bi bi-eye-slash-fill" id="toggleSenha"></i>
-            </div>
-            
-            
-            <div class="lembrar_senha">
-                <label >
-                <input type="checkbox">
-                Lembrar senha 
-                </label>
-                <a href="#">Esqueci senha </a>
-            </div>
+        <main class="container">
+            <form>
+                <h1>Login Cyber</h1>
 
-            <button type="submit" class="login">Login</button>
+                <div class="input_box">
+                    <input placeholder="Usuário" type="email" />
+                    <i class="bi bi-person"></i>
+                </div>
 
-            <div class="registro_link">
-                <p>Nao tem uma conta? <a href="#">Cadastra-se</a></p>
-            </div>
-        </form>
-    </main>
-    <script src="assets/js/script.js"></script>
+                <div class="input_box">
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <i class="bi bi-eye-slash" id="toggleSenha"></i> <!-- ID adicionado aqui -->
+                </div>
+
+                <div class="lembrar_senha">
+                    <label>
+                        <input type="checkbox" />
+                        Lembrar senha
+                    </label>
+                    <a href="#">Esqueci senha</a>
+                </div>
+
+                <button type="submit" class="login">Login</button>
+                
+
+                <div class="registro_link">
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </div>
+            </form>
+        </main>
     </section>
 
-
-    <section id="secao_footer"></section>
     <footer class="d-flex justify-content-end p-3">
         <button class="btn btn-light me-2">Sobre Nós</button>
         <button class="btn btn-light">Suporte</button>
+        <div class="texto_direitos">
+            <p>As imagens utilizadas neste material são meramente ilustrativas. Todos os direitos autorais pertencem aos seus respectivos proprietários. O uso destas imagens destina-se unicamente a fins ilustrativos e não pretende violar quaisquer direitos autorais.</p>
+        </div>
     </footer>
-    
-    
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
