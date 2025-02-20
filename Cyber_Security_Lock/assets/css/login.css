@@ -1,110 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e0f7fa;
-    background-image: url('../img/introducao.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background: url('../img/introducao.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
 }
 
 .container {
-    background-color: white;
-    padding: 20px;
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    max-width: 90%;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(120px);
 }
 
-.container h2 {
+.container h1 {
+    font-size: 36px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.container label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.container input[type="text"],
-.container input[type="password"] {
+.input_box {
+    position: relative;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    height: 50px;
+    margin: 30px 0;
 }
 
-.container .password-requirements {
-    font-size: 12px;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-.container button {
+.input_box input {
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    background-color: #ddd;
     border: none;
-    border-radius: 5px;
+    outline: none;
     font-size: 16px;
-    cursor: pointer;
+    color: #000;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
 }
 
-.container .register-btn {
-    background-color: #000;
-    color: white;
-    margin-bottom: 10px;
+.input_box input::placeholder {
+    color: #333;
 }
 
-.container .back-btn {
-    background-color: #ccc;
-    color: black;
-}
-
-.footer {
+.input_box i {
     position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    color: #888;
+    top: 50%;
+    font-size: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #333;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-.footer .social-icons {
-    margin-bottom: 10px;
-}
-
-.footer .social-icons i {
-    font-size: 24px;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.footer .buttons {
+.lembrar_senha {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    margin: -15px 0px 15px;
 }
 
-.footer .buttons button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
+.lembrar_senha label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.lembrar_senha a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lembrar_senha a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #0074E4; /* Azul elétrico para combinar com o fundo */
+    border: 2px solid transparent;
+    border-radius: 40px;
     cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
 }
 
-.footer .buttons .support-btn {
-    background-color: #000;
-    color: white;
+.login:hover {
+    background-color: #005bb5; /* Azul mais escuro no hover */
+    border: 2px solid #fff;
+    color: #fff;
 }
 
-.footer .buttons .about-btn {
-    background-color: #ccc;
-    color: black;
+.registro_link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registro_link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.registro_link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos personalizados para o footer e botões */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+
+footer .btn {
+    padding: 5px 10px; /* Aumenta o padding para tornar os botões maiores */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição */
+}
+
+footer .btn:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+footer p {
+    color: #6c757d; /* Cor cinza para o texto */
+    font-size: 12px; /* Tamanho da fonte menor */
+    margin-top: 10px; /* Espaçamento acima do texto */
+    text-align: right; /* Alinhamento do texto à direita */
+    max-width: 400px; /* Largura máxima para evitar que o texto ocupe toda a tela */
 }
