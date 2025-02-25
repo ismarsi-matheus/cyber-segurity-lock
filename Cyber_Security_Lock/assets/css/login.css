@@ -123,33 +123,3 @@ body {
 .registro_link a:hover {
     text-decoration: underline;
 }
-
-/* Estilos personalizados para o footer e botões */
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-}
-
-
-footer .btn {
-    padding: 5px 10px; /* Aumenta o padding para tornar os botões maiores */
-    font-size: 16px; /* Aumenta o tamanho da fonte */
-    border-radius: 5px; /* Bordas arredondadas */
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição */
-}
-
-footer .btn:hover {
-    background-color: #000000; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
-}
-footer p {
-    color: #6c757d; /* Cor cinza para o texto */
-    font-size: 12px; /* Tamanho da fonte menor */
-    margin-top: 10px; /* Espaçamento acima do texto */
-    text-align: right; /* Alinhamento do texto à direita */
-}
