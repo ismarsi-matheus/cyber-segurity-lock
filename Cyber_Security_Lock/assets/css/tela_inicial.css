@@ -1,0 +1,174 @@
+/* Estilo Geral */
+body {
+    background: linear-gradient(135deg, #3B82F6, #1E3A8A);
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Principal */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header img {
+    height: 60px;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+.search-bar i {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6B7280;
+}
+
+/* Ícone do Menu */
+.menu-icon {
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    color: #FFD700;
+}
+
+/* Conteúdo Principal */
+.content {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Itens da Lista */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F4F6;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    margin-bottom: 16px;
+}
+
+.item:hover {
+    background: #E5E7EB;
+    transform: scale(1.02);
+}
+
+.item .info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Caixa de Senha */
+.item .info span {
+    background: #6B7280;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Ícone do Olho */
+.item .info i {
+    color: #4B5563;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item .info i:hover {
+    color: #1F2937;
+}
+
+/* Botão Editar */
+.item button {
+    background: #3B82F6;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.item button:hover {
+    background: #1E40AF;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.footer .icons i {
+    color: white;
+    margin-right: 16px;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer .icons i:hover {
+    color: #FFD700;
+}
+
+/* Botões do Rodapé */
+.footer .buttons button {
+    background: #1F2937;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer .buttons button:hover {
+    background: #374151;
+}

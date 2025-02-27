@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="assets/css/tela_inicial.css">
+
+    <!-- Fonte Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Ícones FontAwesome -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <section class="header">
+            <img src="https://storage.googleapis.com/a1aa/image/Od7ALxGNyNQvqj0d6OGc_6XGNacb5gJqIhKnhTf2fBU.jpg" alt="Logo da empresa">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar aqui" aria-label="Pesquisar">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <i class="fas fa-bars menu-icon" aria-label="Abrir menu"></i>
+        </section>
+
+        <!-- Seção de Conteúdo -->
+        <section class="content">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const content = document.querySelector(".content");
+                    for (let i = 0; i < 10; i++) {
+                        content.innerHTML += `
+                            <div class="item">
+                                <div class="info">
+                                    <span>Domínio do site</span>
+                                    <span>********</span>
+                                    <i class="fas fa-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
+                                </div>
+                                <button aria-label="Editar informação">Editar</button>
+                            </div>
+                        `;
+                    }
+                });
+            </script>
+        </section>
+
+        
+    </div>
+
+    <section class="footer">
+            <div class="icons">
+                <i class="fas fa-envelope" aria-label="Contato"></i>
+                <i class="fas fa-times" aria-label="Fechar"></i>
+                <i class="fas fa-cog" aria-label="Configurações"></i>
+                <i class="fab fa-youtube" aria-label="YouTube"></i>
+                <i class="fab fa-linkedin" aria-label="LinkedIn"></i>
+            </div>
+
+            <div class="buttons">
+                <button>Suporte</button>
+                <button>Sobre nós</button>
+            </div>
+        </section>
+</body>
+
+</html>
