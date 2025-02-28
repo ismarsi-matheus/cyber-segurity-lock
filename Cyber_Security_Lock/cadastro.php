@@ -8,36 +8,49 @@
     <title>Cadastro</title>
 </head>
 <body>
+
+        <?php
+            $dsn = 'mysql:dbname=db_cyber_security_lock;host=127.0.0.1';
+            $user = 'root';
+            $password = '';
+            
+            $banco = new PDO($dsn, $user, $password);
+        ?>
+
+
     <section id="secao_container">
         <main class="container">
-            <form>
+            <form action="cadastrar-novo.php" method="POST">
                 <h1>Cadastro Cyber</h1>
 
                 <div class="input_box">
-                    <input placeholder="Usuário" type="email" />
+                    <input placeholder="Nome" type="text"  name="nome"/>
                     <i class="bi bi-person"></i>
                 </div>
 
                 <div class="input_box">
-                    <input type="password" id="senha1" placeholder="Digite sua senha">
+                    <input placeholder="Usuário" type="text"  name="user"/>
+                    <i class="bi bi-person"></i>
+                </div>
+
+
+                <div class="input_box">
+                    <input type="password" id="senha1" placeholder="Digite sua senha" name="senha">
                     <i class="bi bi-eye-slash" id="toggleSenha1"></i>
                 </div>
                 
                 <div class="input_box">
                     <input type="password" id="senha2" placeholder="Confirme a senha">
                     <i class="bi bi-eye-slash" id="toggleSenha2"></i>
-                </div>
-                
+                </div>                
 
                 <div class="input_box">
-                    <input type="tel" name="cpf" id="cpf" placeholder="Digite Seu CPF" maxlength="14" required>
+                    <input type="tel" name="CPF" id="cpf" placeholder="Digite Seu CPF" maxlength="14" required>
                     <i class="bi bi-person-vcard"></i>
-
-
                 </div>
 
                 <div class="input_box">
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email">
                     <i class="bi bi-envelope"></i>
                 </div>
 
@@ -49,11 +62,11 @@
                     <a href="#">Esqueci senha</a>
                 </div>
 
-                <button type="submit" class="login">Cadastro</button>
+                <input type="submit" class="login">
                 
 
                 <div class="registro_link">
-                    <p>Já tem uma conta? <a href="./login.html">Login</a></p>
+                    <p>Já tem uma conta? <a href="login.php">Login</a></p>
                 </div>
             </form>
         </main>
