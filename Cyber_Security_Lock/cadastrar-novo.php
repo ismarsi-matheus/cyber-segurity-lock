@@ -8,7 +8,7 @@ $CPFCadastro = $_POST['CPF'];
 $usuarioCadastro = $_POST['user'];
 $senhaCadastro = $_POST['senha'];
 
-$dsn = 'mysql:dbname=db_cyber_security_lock;host=localhost';
+$dsn = 'mysql:dbname=db_cyber_segurity_lock;host=localhost';
 $user = 'root';
 $password = '';
 

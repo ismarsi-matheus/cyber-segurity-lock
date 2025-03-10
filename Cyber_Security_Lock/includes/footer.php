@@ -13,7 +13,7 @@
     </footer>
 
     <div class="buttons">
-        <button>Suporte</button>
-        <button>Sobre nós</button>
+        <a href="suporte.php"><button>Suporte</button></a>
+        <a href="sobre_nos.php"><button>Sobre nós</button></a>
     </div>
 </section>

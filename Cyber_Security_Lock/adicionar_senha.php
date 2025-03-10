@@ -25,7 +25,7 @@
                     <input type="password" id="password" placeholder="Digite aqui">
                 </div>
                 <button type="submit" class="btn btn-primary">SALVAR</button>
-                <button type="button" class="btn btn-secondary">Voltar</button>
+                <a href="tela_inicial.php"><button type="button" class="btn btn-secondary">Voltar</button></a>
             </form>
         </div>
 

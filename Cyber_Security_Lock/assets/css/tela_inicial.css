@@ -175,3 +175,14 @@ body {
 .footer .buttons button:hover {
     background: #374151;
 }
+
+.adicionar_senha{
+    color: #333;
+    padding: 7px;
+    font-size: 28px;
+    
+}
+.adicionar_senha:hover{
+    color: #3B82F6;
+    transform: scale(1.05);
+}

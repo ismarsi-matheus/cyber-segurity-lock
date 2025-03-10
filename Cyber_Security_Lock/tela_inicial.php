@@ -20,19 +20,21 @@
     <div class="container">
         <!-- Cabeçalho -->
         <section class="header">
+
+        <a href="adicionar_senha.php" class="adicionar_senha"><i class="bi bi-plus-circle" ></i></a>
             
 
             <div class="search-bar">
-                <input type="text" placeholder="Pesquisar aqui" aria-label="Pesquisar">
+                <input type="text" placeholder="Pesquisar aqui">
                 <i class="bi bi-search"></i>
             </div>
 
-            <i class="bi bi-list menu-icon" aria-label="Abrir menu"></i>
+            <i class="bi bi-list menu-icon"></i>
         </section>
 
         <!-- Seção de Conteúdo -->
         <section class="content">
-            <div class="item">
+            a<div class="item">
                 <div class="info">
                     <span>Domínio do site</span>
                     <span>********</span>
