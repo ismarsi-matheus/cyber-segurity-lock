@@ -17,12 +17,13 @@
 </head>
 
 <body>
+    <h1>CSL</h1>
     <div class="container">
         <!-- Cabeçalho -->
         <section class="header">
 
-        <a href="adicionar_senha.php" class="adicionar_senha"><i class="bi bi-plus-circle" ></i></a>
-            
+            <a href="adicionar_senha.php" class="adicionar_senha"><i class="bi bi-plus-circle"></i></a>
+
 
             <div class="search-bar">
                 <input type="text" placeholder="Pesquisar aqui">
@@ -34,105 +35,47 @@
 
         <!-- Seção de Conteúdo -->
         <section class="content">
-            a<div class="item">
+            <?php
+            // Exemplo de senha vinda do banco de dados
+            $senha = "MinhaSenha123"; // Simulação do banco de dados
+            $asteriscos = str_repeat("*", strlen($senha)); // Gera os asteriscos com o mesmo comprimento da senha
+            ?>
+            <a href="detalhamento.php"><div class="item">
                 <div class="info">
                     <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
+                    <span class="password" data-senha="<?= $senha ?>"><?= $asteriscos ?></span>
+                    <i class="bi bi-eye-slash toggle-visibility"></i>
                 </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" aria-label="Ocultar senha"></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" ></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility"  id="toggleSenha1"></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" ></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
-        
-            <div class="item">
-                <div class="info">
-                    <span>Domínio do site</span>
-                    <span>********</span>
-                    <i class="bi bi-eye-slash toggle-visibility" ></i>
-                </div>
-                <button aria-label="Editar informação">Editar</button>
-            </div>
+                <a href="editar_senha.php"><button>Editar</button></a>
+            </div></a>
+
         </section>
-        
+
 
     </div>
 
-    <?php
+    <section class="footer">
+        <div class="icons">
+            <a href="https://accounts.google.com/" target="_blank"><i class="bi bi-envelope"></i></a>
+            <i class="bi bi-twitter-x"></i>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-whatsapp"></i>
+        </div>
 
-    include './includes/footer.php';
-    
-    ?>
+        <footer>
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+        </footer>
+
+        <div class="buttons">
+            <a href="suporte.php"><button>Suporte</button></a>
+            <a href="sobre_nos.php"><button>Sobre nós</button></a>
+        </div>
+    </section>
+
+
+    <script src="assets/js/mostrar_senhas.js"></script>
 </body>
 
 </html>
