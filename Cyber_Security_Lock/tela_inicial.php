@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page</title>
+    <title>Tela Inicial</title>
 
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="assets/css/tela_inicial.css">
@@ -17,20 +17,25 @@
 </head>
 
 <body>
+<a href="perfil.php"><i class="bi bi-person-square person-icon"></i></a>
     <h1>CSL</h1>
     <div class="container">
         <!-- Cabeçalho -->
         <section class="header">
-
             <a href="adicionar_senha.php" class="adicionar_senha"><i class="bi bi-plus-circle"></i></a>
-
 
             <div class="search-bar">
                 <input type="text" placeholder="Pesquisar aqui">
                 <i class="bi bi-search"></i>
             </div>
 
-            <i class="bi bi-list menu-icon"></i>
+            <div class="menu-container">
+                <i class="bi bi-list menu-icon"></i>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button class="dropdown-item" id="filterAZ">Filtro de A-Z</button>
+                    <button class="dropdown-item" id="filterDate">Filtro por Data de Modificação</button>
+                </div>
+            </div>
         </section>
 
         <!-- Seção de Conteúdo -->
@@ -40,18 +45,15 @@
             $senha = "MinhaSenha123"; // Simulação do banco de dados
             $asteriscos = str_repeat("*", strlen($senha)); // Gera os asteriscos com o mesmo comprimento da senha
             ?>
-            <a href="detalhamento.php"><div class="item">
+            <div class="item">
                 <div class="info">
                     <span>Domínio do site</span>
                     <span class="password" data-senha="<?= $senha ?>"><?= $asteriscos ?></span>
                     <i class="bi bi-eye-slash toggle-visibility"></i>
                 </div>
                 <a href="editar_senha.php"><button>Editar</button></a>
-            </div></a>
-
+            </div>
         </section>
-
-
     </div>
 
     <section class="footer">
@@ -76,6 +78,8 @@
 
 
     <script src="assets/js/mostrar_senhas.js"></script>
+    <script src="assets/js/mostrar_menu.js"></script>
+
 </body>
 
 </html>

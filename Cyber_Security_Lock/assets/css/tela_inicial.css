@@ -38,6 +38,21 @@ h1 {
 }
 
 
+.person-icon {
+    position: fixed; /* Fixa o ícone na tela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    font-size: 24px; /* Tamanho do ícone */
+    color: #333; /* Cor do ícone */
+    cursor: pointer; /* Muda o cursor para pointer */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+.person-icon:hover {
+    color: #3B82F6; /* Muda a cor ao passar o mouse */
+}
+
+
 /* Container Principal */
 .container {
     max-width: 900px;
@@ -107,7 +122,7 @@ h1 {
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    
 }
 
 /* Itens da Lista */
@@ -120,6 +135,7 @@ h1 {
     border-radius: 12px;
     transition: 0.3s;
     margin-bottom: 16px;
+    cursor: pointer;
     
 }
 
@@ -218,4 +234,32 @@ h1 {
 .adicionar_senha:hover{
     color: #3B82F6;
     transform: scale(1.05);
+}
+.menu-container {
+    position: relative; /* Para que o menu seja posicionado em relação a este contêiner */
+    display: inline-block; /* Para que o contêiner não ocupe toda a largura */
+}
+
+.dropdown-menu {
+    display: none; /* Esconde o menu por padrão */
+    position: absolute; /* Para que o menu apareça em relação ao contêiner */
+    left: 0; /* Alinha o menu à esquerda do contêiner */
+    top: 30px; /* Ajuste a distância do menu em relação ao ícone */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
 }

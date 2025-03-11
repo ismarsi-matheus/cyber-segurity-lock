@@ -72,6 +72,13 @@
         </main>
     </section>
 
+    <?php
+    
+    
+    include"./includes/footer.php"
+    
+    ?>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
