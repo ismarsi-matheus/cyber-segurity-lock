@@ -1,0 +1,98 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|c:\\users\\antonio.gsgcarneiro\\source\\repos\\cyber_security_lock (p.i.)\\gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 340,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pesquisar.cs",
+              "DocumentMoniker": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs",
+              "RelativeDocumentMoniker": "Pesquisar.cs",
+              "ToolTip": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs",
+              "RelativeToolTip": "Pesquisar.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:28:44.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gerenciamento.cs",
+              "DocumentMoniker": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs",
+              "RelativeDocumentMoniker": "Gerenciamento.cs",
+              "ToolTip": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs",
+              "RelativeToolTip": "Gerenciamento.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:27:26.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gerenciamento.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs",
+              "RelativeDocumentMoniker": "Gerenciamento.cs",
+              "ToolTip": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs [Design]",
+              "RelativeToolTip": "Gerenciamento.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:18:22.437Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pesquisar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\antonio.gsgcarneiro\\source\\repos\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs",
+              "RelativeDocumentMoniker": "Pesquisar.cs",
+              "ToolTip": "C:\\Users\\antonio.gsgcarneiro\\Downloads\\gerenciamento_CYBER-master\\gerenciamento_CYBER-master\\Pesquisar.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\gerenciamento_CYBER-master\\gerenciamento_CYBER-master\\Pesquisar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:00:03.826Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 52,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
