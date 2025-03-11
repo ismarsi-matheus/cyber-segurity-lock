@@ -1,0 +1,138 @@
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Cyber_Security_Lock (P.I.).exe.config
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Cyber_Security_Lock (P.I.).exe
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Cyber_Security_Lock (P.I.).pdb
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).csproj.AssemblyReference.cache
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Form1.resources
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Properties.Resources.resources
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).csproj.GenerateResource.cache
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).csproj.CoreCompileInputs.cache
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).exe
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).pdb
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Tela_Inicial.resources
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Google.Protobuf.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\MySql.Data.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Buffers.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.IO.Pipelines.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Memory.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\ZstdSharp.dll
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Google.Protobuf.pdb
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Google.Protobuf.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\MySql.Data.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Buffers.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.IO.Pipelines.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Memory.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Cadastrar_Cliente.resources
+C:\Users\antonio.gsgcarneiro\source\repos\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Se.0979367D.Up2Date
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Cyber_Security_Lock (P.I.).exe.config
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Cyber_Security_Lock (P.I.).exe
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Cyber_Security_Lock (P.I.).pdb
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Google.Protobuf.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Hash.xxHash.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\MySql.Data.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Buffers.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.IO.Pipelines.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Memory.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Numerics.Vectors.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\ZstdSharp.dll
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Google.Protobuf.pdb
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Google.Protobuf.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\K4os.Hash.xxHash.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\MySql.Data.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Buffers.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.IO.Pipelines.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Memory.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Numerics.Vectors.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Cyber_Security_Lock (P.I.)\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).csproj.AssemblyReference.cache
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Cadastrar_Cliente.resources
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Form1.resources
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Properties.Resources.resources
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Tela_Inicial.resources
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).csproj.GenerateResource.cache
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).csproj.CoreCompileInputs.cache
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Se.0979367D.Up2Date
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).exe
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock (P.I.).pdb
+D:\Cyber_Security_Lock (P.I.)\obj\Debug\Cyber_Security_Lock__P.I._.Gerenciamento.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock (P.I.).csproj.AssemblyReference.cache
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock (P.I.).exe
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock (P.I.).pdb
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Cyber_Security_Lock (P.I.).exe.config
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Cyber_Security_Lock (P.I.).exe
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Cyber_Security_Lock (P.I.).pdb
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Google.Protobuf.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\MySql.Data.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Buffers.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.IO.Pipelines.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Memory.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\ZstdSharp.dll
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Google.Protobuf.pdb
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Google.Protobuf.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\MySql.Data.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Buffers.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.IO.Pipelines.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Memory.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock__P.I._.Cadastrar_Cliente.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock__P.I._.Form1.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock__P.I._.Gerenciamento.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock__P.I._.Pesquisar.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock__P.I._.Properties.Resources.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock__P.I._.Tela_Inicial.resources
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock (P.I.).csproj.GenerateResource.cache
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Security_Lock (P.I.).csproj.CoreCompileInputs.cache
+C:\Users\antonio.gsgcarneiro\Downloads\gerenciamento_CYBER-master\gerenciamento_CYBER-master\obj\Debug\Cyber_Se.0979367D.Up2Date
