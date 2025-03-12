@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleIcons.forEach(icon => {
         icon.addEventListener("click", function () {
             const passwordSpan = this.previousElementSibling; // Pega o <span> da senha
-            
-            if (passwordSpan) {
+
+            if (passwordSpan && passwordSpan.classList.contains("password")) {
                 const senhaReal = passwordSpan.getAttribute("data-senha"); // Obtém a senha real
                 const senhaOculta = "*".repeat(senhaReal.length); // Gera asteriscos do mesmo tamanho
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     passwordSpan.textContent = senhaReal; // Mostra a senha real
                     this.classList.replace("bi-eye-slash", "bi-eye"); // Troca o ícone
                 } else {
-                    passwordSpan.textContent = senhaOculta; // Oculta novamente com o mesmo número de asteriscos
+                    passwordSpan.textContent = senhaOculta; // Oculta novamente com asteriscos
                     this.classList.replace("bi-eye", "bi-eye-slash");
                 }
             }

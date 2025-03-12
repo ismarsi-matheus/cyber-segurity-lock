@@ -18,7 +18,7 @@
             <form>
                 <div class="input-group">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Digite aqui">
+                    <input type="text" id="name" placeholder="Digite aqui" name="dominio" >
                 </div>
                 <div class="input-group">
                     <label for="password">Senha</label>

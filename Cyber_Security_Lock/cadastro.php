@@ -10,7 +10,7 @@
 <body>
 
         <?php
-            $dsn = 'mysql:dbname=db_cyber_security_lock;host=127.0.0.1';
+            $dsn = 'mysql:dbname=cyber_segurity_lock;host=127.0.0.1';
             $user = 'root';
             $password = '';
             
@@ -71,13 +71,6 @@
             </form>
         </main>
     </section>
-
-    <?php
-    
-    
-    include"./includes/footer.php"
-    
-    ?>
 
     <script src="assets/js/script.js"></script>
 </body>
