@@ -2,35 +2,29 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url(../img/introducao.png);
-    background-size: cover;
+    background: url(../img/introducao.png) no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    text-align: center;
     margin: 0;
-    position: relative;
 }
 
 .container {
-    position: relative;
     width: 100%;
-    max-width: 600px;
-    background: white;
-    padding: 100px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
-
-
-
-
 
 h1 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .input-group {
@@ -45,36 +39,53 @@ h1 {
     margin-bottom: 5px;
 }
 
-.input-group input {
+.input-group input,
+.input-group textarea {
     width: 100%;
-    padding: 7px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #0074E4;
     outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
 }
 
 .btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn-primary {
-    background: black;
+    background: #0074E4;
     color: white;
     margin-bottom: 10px;
 }
 
-.btn-secondary {
+.btn_voltar {
     background: #ccc;
     color: black;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
-
-
