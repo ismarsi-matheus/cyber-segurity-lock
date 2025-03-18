@@ -32,31 +32,42 @@
 
     <!-- Conteúdo -->
     <section class="content">
-        <?php
-        try {
-            $banco = new PDO('mysql:dbname=cyber_segurity_lock;host=localhost', 'root', '', [
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ]);
-            $stmt = $banco->query("SELECT dominio, senha FROM tb_senha");
+    <?php
+// Conexão com o banco de dados usando PDO
+$banco = new PDO('mysql:dbname=cyber_segurity_lock;host=localhost', 'root', '');
 
-            foreach ($stmt as $row) {
-                $dominio = htmlspecialchars($row['dominio']);
-                $senha = htmlspecialchars($row['senha']);
-                $asteriscos = str_repeat("*", strlen($senha));
-                echo "
-                <div class='item'>
-                    <div class='info'>
-                        <span>$dominio</span>
-                        <span class='password' data-senha='$senha'>$asteriscos</span>
-                        <i class='bi bi-eye-slash toggle-visibility'></i>
-                    </div>
-                    <a href='formulario_editar.php'><button>Editar</button></a>
-                </div>";
-            }
-        } catch (PDOException $e) {
-            echo "<p>Erro: {$e->getMessage()}</p>";
-        }
-        ?>
+// Executa uma consulta para obter o domínio e a senha armazenados na tabela tb_senha
+$resultado = $banco->query("SELECT dominio, senha FROM tb_senha");
+
+// Percorre cada linha do resultado da consulta usando um loop while
+while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
+    // Protege os dados contra possíveis ataques XSS usando htmlspecialchars()
+    $dominio = htmlspecialchars($row['dominio']);
+    $senha = htmlspecialchars($row['senha']);
+    
+    // Converte a senha para asteriscos, mantendo o mesmo número de caracteres
+    $asteriscos = str_repeat("*", strlen($senha));
+
+    // Exibe as informações na página com HTML dinâmico
+    echo "
+    <div class='item'>
+        <div class='info'>
+            <!-- Mostra o domínio -->
+            <span>$dominio</span>
+            
+            <!-- Exibe os asteriscos no lugar da senha, mas mantém a senha real no atributo data-senha -->
+            <span class='password' data-senha='$senha'>$asteriscos</span>
+            
+            <!-- Ícone de olho para mostrar/ocultar a senha -->
+            <i class='bi bi-eye-slash toggle-visibility'></i>
+        </div>
+
+        <!-- Botão para editar a senha -->
+        <a href='formulario_editar.php'><button>Editar</button></a>
+    </div>";
+}
+?>
+
     </section>
 </div>
 
