@@ -2,6 +2,7 @@
 
 body {
     background: url(../img/introducao.png);
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,18 +12,6 @@ body {
     overflow: hidden;
     background-size: cover;
     position: relative;
-}
-
-/* Fundo */
-.img_fundo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
 }
 
 /* Centralização da Esfera e Logo */
@@ -38,9 +27,9 @@ body {
 }
 
 .animacao {
-    width: 450px;
-    height: 450px;
-    background-size: cover;
+    width: 500px;
+    height: 500px;
+    
     background-position: center;
     animation: rotate 45s linear infinite;
 }
@@ -62,7 +51,7 @@ body {
     background-position: center;
     z-index: 3;
     position: absolute;
-    top: 40%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
