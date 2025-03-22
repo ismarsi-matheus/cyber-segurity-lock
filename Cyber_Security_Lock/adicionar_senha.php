@@ -11,7 +11,7 @@
 
 <body>
     <?php
-    $dsn = 'mysql:dbname=cyber_segurity_lock;host=127.0.0.1';
+    $dsn = 'mysql:dbname=cyber_security_lock;host=127.0.0.1';
     $user = 'root';
     $password = '';
     

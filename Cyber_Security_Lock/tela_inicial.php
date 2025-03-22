@@ -37,41 +37,71 @@
         <!-- Conteúdo -->
         <section class="content">
             <?php
-            // Conexão com o banco de dados usando PDO
-            $banco = new PDO('mysql:dbname=cyber_segurity_lock;host=localhost', 'root', '');
+            session_start(); // Inicia a sessão
 
-            // Executa uma consulta para obter o domínio e a senha armazenados na tabela tb_senha
-            $resultado = $banco->query("SELECT dominio, senha FROM tb_senha");
+            // Verifica se o usuário está logado
+            if (!isset($_SESSION['id_pessoa'])) {
+                header('Location: login.php'); // Redireciona se não estiver logado
+                exit();
+            }
 
-            // Percorre cada linha do resultado da consulta usando um loop while
-            while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
-                // Protege os dados contra possíveis ataques XSS usando htmlspecialchars()
+            $id_pessoa = $_SESSION['id_pessoa']; // Obtém o ID do usuário logado
+
+            // Conexão com o banco de dados
+            $banco = new PDO('mysql:dbname=cyber_security_lock;host=localhost', 'root', '');
+
+            // Busca todas as senhas do usuário logado
+            $query = "
+    SELECT dominio, senha 
+    FROM tb_senha
+    WHERE id_pessoa = :id_pessoa
+";
+
+            $consulta = $banco->prepare($query);
+            $consulta->bindParam(':id_pessoa', $id_pessoa, PDO::PARAM_INT);
+            $consulta->execute();
+
+            // Exibe as senhas associadas ao usuário logado
+            while ($row = $consulta->fetch(PDO::FETCH_ASSOC)) {
                 $dominio = htmlspecialchars($row['dominio']);
                 $senha = htmlspecialchars($row['senha']);
 
-                // Converte a senha para asteriscos, mantendo o mesmo número de caracteres
-                $asteriscos = str_repeat("*", strlen($senha));
+                // Oculta a senha com asteriscos para mais segurança
+                $senha_oculta = str_repeat('*', strlen($senha));
 
-                // Exibe as informações na página com HTML dinâmico
                 echo <<<HTML
-        <div class='item'>
-            <div class='info'>
-                <!-- Mostra o domínio -->
-                <span>{$dominio}</span>
-                <!-- Ícone de olho para mostrar/ocultar a senha -->
-                
-            </div>
-
-            <!-- Botão para editar a senha -->
+    <tr>
+        <td>{$dominio}</td>
+        <td>{$senha_oculta}</td>
+        <td>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal{$dominio}">
-                Editar
+                Ver Senha
             </button>
+        </td>
+    </tr>
 
+    <!-- Modal para visualizar a senha -->
+    <div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLabel{$dominio}">Detalhes da Senha</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Domínio:</strong> {$dominio}</p>
+                    <p><strong>Senha:</strong> {$senha}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
-        HTML;
+    </div>
+HTML;
             }
             ?>
-            
+
     </div>
     </section>
     <div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">

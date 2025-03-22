@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
                 <h1>Login Cyber</h1>
 
                 <div class="input_box">
-                    <input placeholder="Usuário" type="email" name="user"/>
+                    <input placeholder="Usuário" type="text" name="user"/>
                     <i class="bi bi-person"></i>
                 </div>
 

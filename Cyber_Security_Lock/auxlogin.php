@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
     $usuario_form = $_POST['user'];
     $usuario_senha = $_POST['senha'];
 
-    $dsn = 'mysql:dbname=cyber_segurity_lock;host=127.0.0.1';
+    $dsn = 'mysql:dbname=cyber_security_lock;host=127.0.0.1';
     $user = 'root';
     $password = '';
 
