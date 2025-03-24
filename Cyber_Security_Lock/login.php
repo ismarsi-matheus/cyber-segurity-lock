@@ -28,10 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
         $_SESSION['email']         = $dados_usuario['email'];
 
 
-
-
-
-
         header('location:tela_inicial.php');
     } else {
         echo '<script>
@@ -48,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
     <title>Login</title>
 </head>
+
 <body>
     <section id="secao_container">
         <main class="container">
@@ -62,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
                 <h1>Login Cyber</h1>
 
                 <div class="input_box">
-                    <input placeholder="Usuário" type="text" name="user"/>
+                    <input placeholder="Usuário" type="text" name="user" />
                     <i class="bi bi-person"></i>
                 </div>
 
@@ -73,14 +71,14 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
 
                 <div class="lembrar_senha">
                     <label>
-                        <input type="checkbox" />
+                        <input type="checkbox" name="lembrar_senha" />
                         Lembrar senha
                     </label>
-                    <a href="#">Esqueci senha</a>
+                    <a href="esqueci_senha.php">Esqueci senha</a>
                 </div>
 
                 <button type="submit" class="login">Login</button>
-                
+
 
                 <div class="registro_link">
                     <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se</a></p>
@@ -89,7 +87,8 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
         </main>
     </section>
 
-    
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

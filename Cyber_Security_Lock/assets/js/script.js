@@ -31,3 +31,42 @@ document.getElementById('cpf').addEventListener('input', function (e) {
     value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
     e.target.value = value;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const userInput = document.getElementById('user');
+    const passwordInput = document.getElementById('senha1');
+    const rememberCheckbox = document.querySelector('input[name="lembrar_senha"]');
+
+    // Verificar se o localStorage tem valores salvos
+    if (localStorage.getItem('remember') === 'true') {
+        userInput.value = localStorage.getItem('username');
+        passwordInput.value = localStorage.getItem('password');
+        rememberCheckbox.checked = true;
+    }
+
+    // Atualizar localStorage quando o checkbox mudar
+    rememberCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            localStorage.setItem('remember', 'true');
+            localStorage.setItem('username', userInput.value);
+            localStorage.setItem('password', passwordInput.value);
+        } else {
+            localStorage.setItem('remember', 'false');
+            localStorage.removeItem('username');
+            localStorage.removeItem('password');
+        }
+    });
+
+    // Atualizar localStorage quando o usuário ou senha mudar
+    userInput.addEventListener('input', function() {
+        if (rememberCheckbox.checked) {
+            localStorage.setItem('username', userInput.value);
+        }
+    });
+
+    passwordInput.addEventListener('input', function() {
+        if (rememberCheckbox.checked) {
+            localStorage.setItem('password', passwordInput.value);
+        }
+    });
+});
