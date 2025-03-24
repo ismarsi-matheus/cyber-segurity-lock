@@ -23,6 +23,8 @@
             <form action="cadastrar-novo.php" method="POST">
                 <h1>Cadastro Cyber</h1>
 
+                <input type="hidden" placeholder="id_pessoa" name="id_pessoa">
+
                 <div class="input_box">
                     <input placeholder="Nome" type="text"  name="nome"/>
                     <i class="bi bi-person"></i>
@@ -54,13 +56,7 @@
                     <i class="bi bi-envelope"></i>
                 </div>
 
-                <div class="lembrar_senha">
-                    <label>
-                        <input type="checkbox" />
-                        Lembrar senha
-                    </label>
-                    <a href="#">Esqueci senha</a>
-                </div>
+                
 
                 <input type="submit" class="login">
                 
