@@ -38,8 +38,8 @@
                 <textarea id="nota" placeholder="Adicione uma observação" name="nota"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Salvar</button>
-            <a href="tela_inicial.php" ><button class="btn btn-primary btn_voltar">Voltar</button></a>
         </form>
+        <a href="tela_inicial.php" class="btn btn-primary btn_voltar">Voltar</a>
     </div>
 </body>
 

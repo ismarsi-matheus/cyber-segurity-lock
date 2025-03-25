@@ -54,10 +54,10 @@
 
                 // Busca todas as senhas do usuário logado
                 $query_senha = "
-        SELECT dominio, senha 
-        FROM tb_senha
-        WHERE id_user = :id_user
-    ";
+    SELECT dominio, usuario, senha, nota 
+    FROM tb_senha
+    WHERE id_user = :id_user
+";
 
                 $consulta_senha = $banco->prepare($query_senha);
                 $consulta_senha->bindParam(':id_user', $id_user, PDO::PARAM_INT);
@@ -66,40 +66,44 @@
                 // Exibe as senhas associadas ao usuário logado
                 while ($row = $consulta_senha->fetch(PDO::FETCH_ASSOC)) {
                     $dominio = htmlspecialchars($row['dominio']);
+                    $usuario = htmlspecialchars($row['usuario']);
                     $senha = htmlspecialchars($row['senha']);
+                    $nota = htmlspecialchars($row['nota']);
 
                     // Oculta a senha com asteriscos para mais segurança
                     $senha_oculta = str_repeat('*', strlen($senha));
 
                     echo <<<HTML
-            <tr>
-                <td>{$dominio}</td>
-                <td>{$senha_oculta}</td>
-                <td>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal{$dominio}">
-                        Ver Senha
-                    </button>
-                </td>
-            </tr>
+<tr>
+    <td>{$dominio}</td>
+    <td>{$senha_oculta}</td>
+    <td>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal{$dominio}">
+            Ver Senha
+        </button>
+    </td>
+</tr>
 
-            <!-- Modal para visualizar a senha -->
-            <div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modalLabel{$dominio}">Detalhes da Senha</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>Domínio:</strong> {$dominio}</p>
-                            <p><strong>Senha:</strong> {$senha}</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
-                </div>
+<!-- Modal para visualizar a senha -->
+<div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalLabel{$dominio}">Detalhes da Senha</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+                <p><strong>Domínio:</strong> {$dominio}</p>
+                <p><strong>Usuário:</strong> {$usuario}</p>
+                <p><strong>Senha:</strong> {$senha}</p>
+                <p><strong>Nota:</strong> {$nota}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
 HTML;
                 }
             } catch (PDOException $e) {
@@ -127,8 +131,6 @@ HTML;
     </section>
 
 
-    <script src="assets/js/mostrar_senhas.js"></script>
-    <script src="assets/js/mostrar_menu.js"></script>
 
 </body>
 
