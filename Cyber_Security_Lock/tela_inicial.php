@@ -40,88 +40,74 @@
             session_start(); // Inicia a sessão
 
             // Verifica se o usuário está logado
-            if (!isset($_SESSION['id_pessoa'])) {
+            if (!isset($_SESSION['id_user'])) {
                 header('Location: login.php'); // Redireciona se não estiver logado
                 exit();
             }
 
-            $id_pessoa = $_SESSION['id_pessoa']; // Obtém o ID do usuário logado
+            $id_user = $_SESSION['id_user']; // Obtém o ID do usuário logado
 
             // Conexão com o banco de dados
-            $banco = new PDO('mysql:dbname=cyber_security_lock;host=localhost', 'root', '');
+            try {
+                $banco = new PDO('mysql:dbname=cyber_security_lock;host=localhost', 'root', '');
+                $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            // Busca todas as senhas do usuário logado
-            $query = "
-    SELECT dominio, senha 
-    FROM tb_senha
-    WHERE id_pessoa = :id_pessoa
-";
+                // Busca todas as senhas do usuário logado
+                $query_senha = "
+        SELECT dominio, senha 
+        FROM tb_senha
+        WHERE id_user = :id_user
+    ";
 
-            $consulta = $banco->prepare($query);
-            $consulta->bindParam(':id_pessoa', $id_pessoa, PDO::PARAM_INT);
-            $consulta->execute();
+                $consulta_senha = $banco->prepare($query_senha);
+                $consulta_senha->bindParam(':id_user', $id_user, PDO::PARAM_INT);
+                $consulta_senha->execute();
 
-            // Exibe as senhas associadas ao usuário logado
-            while ($row = $consulta->fetch(PDO::FETCH_ASSOC)) {
-                $dominio = htmlspecialchars($row['dominio']);
-                $senha = htmlspecialchars($row['senha']);
+                // Exibe as senhas associadas ao usuário logado
+                while ($row = $consulta_senha->fetch(PDO::FETCH_ASSOC)) {
+                    $dominio = htmlspecialchars($row['dominio']);
+                    $senha = htmlspecialchars($row['senha']);
 
-                // Oculta a senha com asteriscos para mais segurança
-                $senha_oculta = str_repeat('*', strlen($senha));
+                    // Oculta a senha com asteriscos para mais segurança
+                    $senha_oculta = str_repeat('*', strlen($senha));
 
-                echo <<<HTML
-    <tr>
-        <td>{$dominio}</td>
-        <td>{$senha_oculta}</td>
-        <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal{$dominio}">
-                Ver Senha
-            </button>
-        </td>
-    </tr>
+                    echo <<<HTML
+            <tr>
+                <td>{$dominio}</td>
+                <td>{$senha_oculta}</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal{$dominio}">
+                        Ver Senha
+                    </button>
+                </td>
+            </tr>
 
-    <!-- Modal para visualizar a senha -->
-    <div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLabel{$dominio}">Detalhes da Senha</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Domínio:</strong> {$dominio}</p>
-                    <p><strong>Senha:</strong> {$senha}</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <!-- Modal para visualizar a senha -->
+            <div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalLabel{$dominio}">Detalhes da Senha</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Domínio:</strong> {$dominio}</p>
+                            <p><strong>Senha:</strong> {$senha}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 HTML;
+                }
+            } catch (PDOException $e) {
+                echo 'Erro: ' . $e->getMessage();
             }
             ?>
-
+        </section>
     </div>
-    </section>
-    <div class="modal fade" id="modal{$dominio}" tabindex="-1" aria-labelledby="modalLabel{$dominio}" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLabel{$dominio}">Detalhes da Senha</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Domínio:</strong> {$dominio}</p>
-                    <p><strong>Senha:</strong> {$senha}</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Rodapé -->
     <section class="footer">
@@ -139,6 +125,7 @@ HTML;
             <a href="sobre_nos.php"><button>Sobre nós</button></a>
         </div>
     </section>
+
 
     <script src="assets/js/mostrar_senhas.js"></script>
     <script src="assets/js/mostrar_menu.js"></script>

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
 /* Estilo Geral */
-
-
 body {
     background: url(../img/introducao.png);
     background-size: cover;
@@ -11,12 +8,14 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-}
-html, body {
-    overflow-x: hidden; /* Remove qualquer rolagem horizontal */
-    width: 100%; /* Garante que o conteúdo respeite a tela */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+.container {
+    flex: 1;
+}
 
 h1 {
     text-align: center;
@@ -27,33 +26,27 @@ h1 {
     background: linear-gradient( #2F5FDB, #703FD8, #B11FD6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     display: block;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
-    
-    padding: 10px 0; /* Espaço interno para evitar margem extra */
-    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 
-
 .person-icon {
-    position: fixed; /* Fixa o ícone na tela */
-    top: 20px; /* Distância do topo */
-    right: 20px; /* Distância da direita */
-    font-size: 24px; /* Tamanho do ícone */
-    color: #333; /* Cor do ícone */
-    cursor: pointer; /* Muda o cursor para pointer */
-    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .person-icon:hover {
-    color: #3B82F6; /* Muda a cor ao passar o mouse */
+    color: #3B82F6;
 }
 
-
-/* Container Principal */
 .container {
     max-width: 900px;
     margin: 10px auto;
@@ -61,10 +54,8 @@ h1 {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 16px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    padding-bottom: 24%;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     justify-content: space-between;
@@ -76,7 +67,6 @@ h1 {
     height: 60px;
 }
 
-/* Barra de Pesquisa */
 .search-bar {
     position: relative;
     width: 300px;
@@ -104,7 +94,6 @@ h1 {
     color: #6B7280;
 }
 
-/* Ícone do Menu */
 .menu-icon {
     font-size: 28px;
     color: #333;
@@ -116,16 +105,13 @@ h1 {
     color: #3B82F6;
 }
 
-/* Conteúdo Principal */
 .content {
     background: #ffffff;
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    
 }
 
-/* Itens da Lista */
 .item {
     display: flex;
     justify-content: space-between;
@@ -136,7 +122,6 @@ h1 {
     transition: 0.3s;
     margin-bottom: 16px;
     cursor: pointer;
-    
 }
 
 .item:hover {
@@ -148,10 +133,8 @@ h1 {
     display: flex;
     align-items: center;
     gap: 12px;
-    
 }
 
-/* Caixa de Senha */
 .item .info span {
     background: #6B7280;
     color: #ffffff;
@@ -161,7 +144,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Ícone do Olho */
 .item .info i {
     color: #4B5563;
     cursor: pointer;
@@ -172,7 +154,6 @@ h1 {
     color: #1F2937;
 }
 
-/* Botão Editar */
 .item button {
     background: #3B82F6;
     color: #ffffff;
@@ -225,26 +206,27 @@ h1 {
     background: #374151;
 }
 
-.adicionar_senha{
+.adicionar_senha {
     color: #333;
     padding: 7px;
     font-size: 28px;
-    
 }
-.adicionar_senha:hover{
+
+.adicionar_senha:hover {
     color: #3B82F6;
     transform: scale(1.05);
 }
+
 .menu-container {
-    position: relative; /* Para que o menu seja posicionado em relação a este contêiner */
-    display: inline-block; /* Para que o contêiner não ocupe toda a largura */
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-menu {
-    display: none; /* Esconde o menu por padrão */
-    position: absolute; /* Para que o menu apareça em relação ao contêiner */
-    left: 0; /* Alinha o menu à esquerda do contêiner */
-    top: 30px; /* Ajuste a distância do menu em relação ao ícone */
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

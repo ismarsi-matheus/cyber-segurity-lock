@@ -1,50 +1,34 @@
 <?php
 session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
-    $usuario_form = $_POST['user'];
-    $usuario_senha = $_POST['senha'];
-    $lembrar_senha = isset($_POST['lembrar_senha']) ? true : false;
+// Conexão com o banco de dados
+$dsn = 'mysql:dbname=cyber_security_lock;host=localhost';
+$user = 'root';
+$password = '';
 
-    $dsn = 'mysql:dbname=cyber_security_lock;host=127.0.0.1';
-    $user = 'root';
-    $password = '';
-
+try {
     $banco = new PDO($dsn, $user, $password);
+    $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $script = "SELECT * FROM tb_user WHERE usuario ='{$usuario_form}' AND senha ='{$usuario_senha}'";
-    $resultado = $banco->query($script)->fetch();
+    // Supondo que você receba o usuário e senha do formulário de login
+    $usuario = $_POST['user'];
+    $senha = $_POST['senha'];
 
-    if ($resultado) {
-        $select_usuario = "SELECT * FROM tb_pessoa WHERE id ={$resultado['id_pessoa']}";
-        $dados_usuario = $banco->query($select_usuario)->fetch();
+    $query = "SELECT id FROM tb_user WHERE usuario = :usuario AND senha = :senha";
+    $stmt = $banco->prepare($query);
+    $stmt->bindParam(':usuario', $usuario);
+    $stmt->bindParam(':senha', $senha);
+    $stmt->execute();
 
-        $_SESSION['id_pessoa'] = $dados_usuario['id'];
-        $_SESSION['nome'] = $dados_usuario['nome'];
-        $_SESSION['cpf'] = $dados_usuario['cpf'];
-        $_SESSION['email'] = $dados_usuario['email'];
-
-        // checbox de lembrar senha 
-
-        if ($lembrar_senha) {
-            setcookie('usuario', $usuario_form, time() + (86400 * 30), "/"); // 30 dias
-            setcookie('senha', $usuario_senha, time() + (86400 * 30), "/"); // 30 dias
-        } else {
-            setcookie('usuario', '', time() - 3600, "/");
-            setcookie('senha', '', time() - 3600, "/");
-        }
-
+    if ($stmt->rowCount() > 0) {
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['id_user'] = $user['id']; // Armazena o ID do usuário na sessão
         header('Location: tela_inicial.php');
+        exit();
     } else {
-        echo '<script>
-            alert("Usuário ou Senha não encontrado");
-            window.location.replace="login.php";
-        </script>';
+        echo 'Usuário ou senha inválidos';
     }
-} else {
-    if (isset($_COOKIE['usuario']) && isset($_COOKIE['senha'])) {
-        $usuario_form = $_COOKIE['usuario'];
-        $usuario_senha = $_COOKIE['senha'];
-    }
+} catch (PDOException $e) {
+    echo 'Erro: ' . $e->getMessage();
 }
 ?>
