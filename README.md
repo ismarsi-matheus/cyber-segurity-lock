@@ -1,92 +1,91 @@
 # Cyber-Security-Lock
 
-Projeto de Programação realizado pelos alunos: Antônio Gabriel e Matheus Leonardo.
+Projeto de programação desenvolvido por **Antônio Gabriel** e **Matheus Leonardo**.
 
-## Índice
+## 📌 Índice
 
-- [Cyber-Security-Lock](#cyber-security-lock)
-  - [Índice](#índice)
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
   - [Tela de Login](#tela-de-login)
   - [Tela de Registro](#tela-de-registro)
   - [Tela de Redefinição de Senha](#tela-de-redefinição-de-senha)
-  - [Tela de Sobre Nós](#tela-de-sobre-nós)
-  - [Tela de Suporte](#tela-de-suporte)
-  - [Tela de User](#tela-de-user)
-  - [Tela de Adição de Senha](#tela-de-adição-de-senha)
-  - [Tela de Detalhamento das Senhas](#tela-de-detalhamento-das-senhas)
+  - [Tela de Usuário](#tela-de-usuário)
   - [Tela de Gerenciamento de Senhas](#tela-de-gerenciamento-de-senhas)
-  - [Rodapé e Recursos Comuns](#rodapé-e-recursos-comuns)
+  - [Outras Telas](#outras-telas)
+- [Validações](#validações)
+- [Rodapé e Recursos Comuns](#rodapé-e-recursos-comuns)
+- [Licença](#licença)
 
-## Tela de Login
+## 🛡 Sobre o Projeto
 
-- [x] **Campos**: Email e Senha
-- [x] **Botão de Enviar**: Envia as credenciais para validação.
-- [ ] **Validação**: Valida o usuário e a senha.
-- [x] **Botão "Esqueceu a senha?"**: Redireciona para a tela de recuperação de senha.
+O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas que permite aos usuários armazenar e gerenciar suas credenciais de forma segura. O sistema possui autenticação e criptografia para garantir a proteção dos dados.
 
-## Tela de Registro
+## 🛠 Tecnologias Utilizadas
 
-- [x] **Campos**: Email, Nome de Usuário, Senha, Confirme a Senha, CPF
-- [ ] **Validação**: Verificação dos dados de email e CPF.
+- **Front-end:** HTML, CSS, JavaScript
+- **Back-end:** PHP
+- **Banco de Dados:** MySQL
 
-## Tela de Redefinição de Senha
+## ⚡ Funcionalidades
 
-- [ ] **Campos**: CPF, Email, Nova Senha, Confirme a Senha
-- [ ] **Validação**: Verificação do CPF e Email.
+### 🔐 Tela de Login
+- **Campos:** Email e Senha
+- **Validação:**
+  - Verifica se os campos foram preenchidos.
+  - Confirma se as credenciais existem no banco de dados.
+- **Recursos:**
+  - Opção "Esqueceu a senha?" para redefinir credenciais.
 
-## Tela de Sobre Nós
+### 📝 Tela de Registro
+- **Campos:** Nome de Usuário, Email, CPF, Senha e Confirmação de Senha.
+- **Validação:**
+  - Verifica se os campos estão preenchidos corretamente.
+  - Validação de CPF.
+  - Confere se a senha atende aos critérios de segurança.
 
-- [ ] **Descrição**: Texto explicando quem somos (alunos e o que estamos fazendo).
-- [ ] **Botão de Voltar**: Retorna à tela anterior.
+### 🔄 Tela de Redefinição de Senha
+- **Campos:** CPF, Email, Nova Senha e Confirmação de Senha.
+- **Validação:**
+  - Confere se CPF e Email pertencem a um usuário válido.
+  - Exige que a nova senha tenha um formato seguro.
 
-## Tela de Suporte
+### 👤 Tela de Usuário
+- Exibe informações do usuário (Nome, Email, CPF, etc.).
+- Opção para editar perfil e alterar senha.
 
-- [ ] **Descrição**: Exibe perguntas frequentes.
-- [ ] **Campo de Pergunta**: Permite ao usuário enviar uma nova pergunta.
-- [ ] **Botão de Voltar**: Retorna à tela anterior.
+### 🔑 Tela de Gerenciamento de Senhas
+- **Recursos:**
+  - Exibe lista de senhas armazenadas com segurança.
+  - Senhas mascaradas com asteriscos.
+  - Opção para revelar senha ao clicar no ícone de "olho".
+  - Filtros para ordenação alfabética e por data.
+  - Função de pesquisa para localizar senhas rapidamente.
 
-## Tela de User
+### 📌 Outras Telas
+- **Sobre Nós:** Explica o propósito do projeto e sua equipe.
+- **Suporte:** Respostas a perguntas frequentes e opção de contato.
+- **Adição de Senha:** Permite cadastrar novas credenciais.
+- **Detalhamento de Senha:** Exibe informações de uma senha específica.
 
-- [ ] **Informações do Usuário**: Nome, Nome de Usuário, Email, CPF e Senha.
-- [ ] **Botão de Voltar**: Retorna à tela anterior.
+## ✅ Validações
+| Campo | Validação |
+|--------|--------------------------------|
+| Email | Deve ser um email válido |
+| Senha | Mínimo de 8 caracteres, com letras maiúsculas, minúsculas e números |
+| CPF | Formato válido e não repetido |
+| Confirmação de Senha | Deve ser idêntica à senha informada |
 
-## Tela de Adição de Senha
+## 📌 Rodapé e Recursos Comuns
+- Ícones de redes sociais:
+  - WhatsApp ✅
+  - Email ✅
+  - Instagram ✅
+  - Twitter ❌ (Em desenvolvimento)
+  - LinkedIn ❌ (Em desenvolvimento)
+- Links para **Suporte** e **Sobre Nós**.
+- Direitos autorais: "Todos os direitos reservados" no rodapé de todas as páginas.
 
-- [ ] **Campos**: Nome/Domínio (onde a senha será usada) e Campo de Senha.
-- [ ] **Função**: Adiciona uma nova senha para um domínio específico.
+## 📜 Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-## Tela de Detalhamento das Senhas
-
-- [ ] **Campos**: Nome/Domínio e Senha.
-- [ ] **Função**: Exibe detalhes da senha para o domínio específico.
-
-## Tela de Gerenciamento de Senhas
-
-- [ ] **Descrição**: Exibe as senhas do usuário, com o domínio e a senha mascarada com asteriscos.
-- [ ] **Funções**:
-  - [ ] **Olho**: Revela a senha ao clicar.
-  - [ ] **Filtro**: Ordena senhas de A-Z e por data de modificação.
-  - [ ] **Botão de Edição**: Redireciona para a tela de detalhamento da senha.
-  - [ ] **Botão de Adição de Senha**: Redireciona para a tela de adição de senha.
-- [ ] **Menu de Hambúrguer**: Com 4 opções:
-  - [ ] **Notificação**: Exibe notificações.
-  - [ ] **Suporte**: Redireciona para a tela de suporte.
-  - [ ] **Sobre Nós**: Redireciona para a tela de sobre nós.
-  - [ ] **Sugestão**: Permite enviar sugestões.
-- [ ] **Barra de Pesquisa**: Localizada acima do container de senhas, permite buscar senhas específicas.
-- [ ] **Logo do CSL**: Exibido acima da barra de pesquisa.
-
-## Rodapé e Recursos Comuns
-
-- [ ] **Rodapé**: Em todas as telas, o rodapé será fixo com os seguintes itens:
-  - [ ] **Redes Sociais**:
-    - [x] WhatsApp
-    - [x] Email
-    - [ ] X (ex-Twitter)
-    - [x] Instagram
-    - [ ] LinkedIn
-  - [ ] **Botões**:
-    - [x] **Suporte**: Leva para a tela de suporte.
-    - [x] **Sobre Nós**: Leva para a tela de sobre nós.
-    - [ ] **Linkar Botões**:Ao clicar nos botões ele levará as telas de suporte e sobre nós.
-  - [ ] **Texto de Direitos Autorais**: No centro do rodapé, exibindo a frase "Todos os direitos reservados".
