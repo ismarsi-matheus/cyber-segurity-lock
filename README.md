@@ -13,6 +13,7 @@ Projeto de programação desenvolvido por **Antônio Gabriel** e **Matheus Leona
   - [Tela de Usuário](#tela-de-usuário)
   - [Tela de Gerenciamento de Senhas](#tela-de-gerenciamento-de-senhas)
   - [Outras Telas](#outras-telas)
+- [Fluxo de Telas](#fluxo-de-telas)
 - [Validações](#validações)
 - [Rodapé e Recursos Comuns](#rodapé-e-recursos-comuns)
 - [Licença](#licença)
@@ -67,6 +68,18 @@ O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas que permite a
 - **Suporte:** Respostas a perguntas frequentes e opção de contato.
 - **Adição de Senha:** Permite cadastrar novas credenciais.
 - **Detalhamento de Senha:** Exibe informações de uma senha específica.
+
+## 🔄 Fluxo de Telas
+1. **Abertura do sistema** → Exibe a **Tela de Login**
+2. **Login bem-sucedido** → Redireciona para **Tela de Gerenciamento de Senhas**
+3. **Clique em "Esqueceu a senha?"** → Redireciona para **Tela de Redefinição de Senha**
+4. **Registro de novo usuário** → Após conclusão, redireciona para **Tela de Login**
+5. **No Gerenciador de Senhas:**
+   - Clique em **Adicionar Senha** → Abre a **Tela de Adição de Senha**
+   - Clique em uma senha → Abre a **Tela de Detalhamento de Senha**
+   - Clique em **Usuário** → Abre a **Tela de Usuário**
+   - Clique em **Sobre Nós** → Abre a **Tela de Sobre Nós**
+   - Clique em **Suporte** → Abre a **Tela de Suporte**
 
 ## ✅ Validações
 | Campo | Validação |
