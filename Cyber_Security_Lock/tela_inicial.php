@@ -36,121 +36,127 @@
 
         <!-- Conteúdo -->
         <section class="content">
-            <?php
-            session_start(); // Inicia a sessão
+            <div class="lista-senhas">
+                <?php
+                session_start(); // Inicia a sessão
 
-            // Verifica se o usuário está logado
-            if (!isset($_SESSION['id_user'])) {
-                header('Location: login.php'); // Redireciona se não estiver logado
-                exit();
-            }
-
-            $id_user = $_SESSION['id_user']; // Obtém o ID do usuário logado
-
-            // Conexão com o banco de dados
-            try {
-                $banco = new PDO('mysql:dbname=cyber_security_lock;host=localhost', 'root', '');
-                $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                // Busca todas as senhas do usuário logado
-                $query_senha = "
-    SELECT id, dominio, usuario, senha, nota 
-    FROM tb_senha   
-    WHERE id_user = :id_user
-";
-
-                $consulta_senha = $banco->prepare($query_senha);
-                $consulta_senha->bindParam(':id_user', $id_user, PDO::PARAM_INT);
-                $consulta_senha->execute();
-
-                // Exibe as senhas associadas ao usuário logado
-                while ($row = $consulta_senha->fetch(PDO::FETCH_ASSOC)) {
-                    $id = $row['id'];
-                    $dominio = htmlspecialchars($row['dominio']);
-                    $usuario = htmlspecialchars($row['usuario']);
-                    $senha = htmlspecialchars($row['senha']);
-                    $nota = htmlspecialchars($row['nota']);
-
-                    // Oculta a senha com asteriscos para mais segurança
-                    $senha_oculta = str_repeat('*', strlen($senha));
-
-                    echo <<<HTML
-<tr>
-    <td>{$dominio}</td>
-    <td>{$senha_oculta}</td>
-    <td>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVer{$id}">
-            Ver Senha
-        </button>
-        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalEditar{$id}">
-            Editar
-        </button>
-    </td>
-</tr>
-
-<!-- Modal para visualizar a senha -->
-<div class="modal fade" id="modalVer{$id}" tabindex="-1" aria-labelledby="modalLabelVer{$id}" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalLabelVer{$id}">Detalhes da Senha</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Domínio:</strong> {$dominio}</p>
-                <p><strong>Usuário:</strong> {$usuario}</p>
-                <p><strong>Senha:</strong> {$senha}</p>
-                <p><strong>Nota:</strong> {$nota}</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal para editar a senha -->
-<div class="modal fade" id="modalEditar{$id}" tabindex="-1" aria-labelledby="modalLabelEditar{$id}" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalLabelEditar{$id}">Editar Senha</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="editar_senha.php" method="POST">
-                <div class="modal-body">
-                    <input type="hidden" name="id" value="{$id}">
-                    <div class="mb-3">
-                        <label for="dominio{$id}" class="form-label">Domínio</label>
-                        <input type="text" class="form-control" id="dominio{$id}" name="dominio" value="{$dominio}">
-                    </div>
-                    <div class="mb-3">
-                        <label for="usuario{$id}" class="form-label">Usuário</label>
-                        <input type="text" class="form-control" id="usuario{$id}" name="usuario" value="{$usuario}">
-                    </div>
-                    <div class="mb-3">
-                        <label for="senha{$id}" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="senha{$id}" name="senha" value="{$senha}">
-                    </div>
-                    <div class="mb-3">
-                        <label for="nota{$id}" class="form-label">Nota</label>
-                        <textarea class="form-control" id="nota{$id}" name="nota">{$nota}</textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="submit" class="btn btn-primary">Salvar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-HTML;
+                // Verifica se o usuário está logado
+                if (!isset($_SESSION['id_user'])) {
+                    header('Location: login.php'); // Redireciona se não estiver logado
+                    exit();
                 }
-            } catch (PDOException $e) {
-                echo 'Erro: ' . $e->getMessage();
-            }
-            ?>
+
+                $id_user = $_SESSION['id_user']; // Obtém o ID do usuário logado
+
+                // Conexão com o banco de dados
+                try {
+                    $banco = new PDO('mysql:dbname=cyber_security_lock;host=localhost', 'root', '');
+                    $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                    // Busca todas as senhas do usuário logado
+                    $query_senha = "
+            SELECT id, dominio, usuario, senha, nota 
+            FROM tb_senha
+            WHERE id_user = :id_user
+        ";
+
+                    $consulta_senha = $banco->prepare($query_senha);
+                    $consulta_senha->bindParam(':id_user', $id_user, PDO::PARAM_INT);
+                    $consulta_senha->execute();
+
+                    // Exibe as senhas associadas ao usuário logado
+                    while ($row = $consulta_senha->fetch(PDO::FETCH_ASSOC)) {
+                        $id = $row['id'];
+                        $dominio = htmlspecialchars($row['dominio']);
+                        $usuario = htmlspecialchars($row['usuario']);
+                        $senha = htmlspecialchars($row['senha']);
+                        $nota = htmlspecialchars($row['nota']);
+
+                        // Oculta a senha com asteriscos para mais segurança
+                        $senha_oculta = str_repeat('*', strlen($senha));
+
+                        echo <<<HTML
+            <div class="senha-card">
+                <div class="senha-info">
+                    <p><strong>Domínio:</strong> {$dominio}</p>
+                    <p><strong>Usuário:</strong> {$usuario}</p>
+                    <p><strong>Senha:</strong> {$senha_oculta}</p>
+                </div>
+                <div class="senha-acoes">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVer{$id}">
+                        Ver Senha
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalEditar{$id}">
+                        Editar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal para visualizar a senha -->
+            <div class="modal fade" id="modalVer{$id}" tabindex="-1" aria-labelledby="modalLabelVer{$id}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalLabelVer{$id}">Detalhes da Senha</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Domínio:</strong> {$dominio}</p>
+                            <p><strong>Usuário:</strong> {$usuario}</p>
+                            <p><strong>Senha:</strong> {$senha}</p>
+                            <p><strong>Nota:</strong> {$nota}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para editar a senha -->
+            <div class="modal fade" id="modalEditar{$id}" tabindex="-1" aria-labelledby="modalLabelEditar{$id}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalLabelEditar{$id}">Editar Senha</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form action="editar_senha.php" method="POST">
+                            <div class="modal-body">
+                                <input type="hidden" name="id" value="{$id}">
+                                <div class="mb-3">
+                                    <label for="dominio{$id}" class="form-label">Domínio</label>
+                                    <input type="text" class="form-control" id="dominio{$id}" name="dominio" value="{$dominio}">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="usuario{$id}" class="form-label">Usuário</label>
+                                    <input type="text" class="form-control" id="usuario{$id}" name="usuario" value="{$usuario}">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="senha{$id}" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="senha{$id}" name="senha" value="{$senha}">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nota{$id}" class="form-label">Nota</label>
+                                    <textarea class="form-control" id="nota{$id}" name="nota">{$nota}</textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+HTML;
+                    }
+                } catch (PDOException $e) {
+                    echo '<p class="text-danger">Erro: ' . $e->getMessage() . '</p>';
+                }
+                ?>
+            </div>
+
         </section>
     </div>
 
