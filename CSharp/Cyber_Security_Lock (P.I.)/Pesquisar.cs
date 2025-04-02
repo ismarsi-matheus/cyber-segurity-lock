@@ -35,7 +35,7 @@ namespace Cyber_Security_Lock__P.I._
         private void button_buscar_Click(object sender, EventArgs e)
         {
 
-            string connectionString = "Server=localhost; Port=3306; Database=db_cyber_security_lock; Uid=root; Pwd=;";
+            string connectionString = "Server=localhost; Port=3306; Database=cyber_security_lock; Uid=root; Pwd=;";
 
             string query = "SELECT nome, email, CPF, usuario, senha FROM tb_user WHERE usuario LIKE @usuario";
 

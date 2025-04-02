@@ -58,11 +58,13 @@ namespace Cyber_Security_Lock__P.I._
             }
 
             //Define sua string de conexão com o banco
-            string conexaoString = "Server=localhost; Port=3306; Database=db_cyber_security_lock; Uid=root; Pwd=;";
+            string conexaoString = "Server=localhost; Port=3306; Database=cyber_security_lock; Uid=root; Pwd=;";
 
             //Defina a inserção de registro no BD
 
-            string query = "INSERT INTO tb_user (nome, email, CPF, usuario) VALUES (@nome, @email, @CPF, @usuario)";
+            string queryPessoa = "INSERT INTO tb_pessoa (nome, cpf, email) VALUES (@nome, @CPF,@email)";
+
+            string queryUser = "INSERT INTO tb_user (usuario) VALUES (@usuario)";
 
             //Crie uma conexão com o BD
 
@@ -74,19 +76,47 @@ namespace Cyber_Security_Lock__P.I._
                     conexao.Open();
 
                     //Crie o comenado SQL
-                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    using (MySqlCommand comando = new MySqlCommand(queryPessoa, conexao))
                     {
                         //Adicionar os parâmetros com os valores dos TexBox
                         comando.Parameters.AddWithValue("@nome", textBox_nome.Text);
                         comando.Parameters.AddWithValue("@email", textBox_email.Text);
                         comando.Parameters.AddWithValue("@CPF", maskedTextBox_CPF.Text);
-                        comando.Parameters.AddWithValue("@usuario", textBox_usuario.Text);
-
+                        
                         //Executa o comando de inserção
 
                         comando.ExecuteNonQuery();
 
                         MessageBox.Show("Dados inseridos com sucesso!");
+
+                        using (MySqlConnection conexao2 = new MySqlConnection(conexaoString))
+                        {
+                            try
+                            {
+                                //Abre a conexao
+                                conexao2.Open();
+
+                                //Crie o comenado SQL
+                                using (MySqlCommand comando2 = new MySqlCommand(queryUser, conexao2))
+                                {
+                                    //Adicionar os parâmetros com os valores dos TexBox
+                                    comando2.Parameters.AddWithValue("@usuario", textBox_usuario.Text);
+
+
+                                    //Executa o comando de inserção
+
+                                    comando2.ExecuteNonQuery();
+
+                                    
+                                }
+                            }
+
+                            catch (Exception ex)
+                            {
+                                //em caso de erro, exiba mensagem de erro
+                                MessageBox.Show("Erro: " + ex.Message);
+                            }
+                        }
                     }
                 }
 
@@ -96,6 +126,8 @@ namespace Cyber_Security_Lock__P.I._
                     MessageBox.Show("Erro: " + ex.Message);
                 }
             }
+
+            
         }
         private void button_voltar_Click(object sender, EventArgs e)
         {

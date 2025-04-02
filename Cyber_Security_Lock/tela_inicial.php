@@ -55,7 +55,7 @@
                 // Busca todas as senhas do usuário logado
                 $query_senha = "
     SELECT id, dominio, usuario, senha, nota 
-    FROM tb_senha
+    FROM tb_senha   
     WHERE id_user = :id_user
 ";
 

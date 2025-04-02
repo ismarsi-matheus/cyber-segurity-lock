@@ -21,7 +21,7 @@ namespace Cyber_Security_Lock__P.I._
         private void button_consultar_Click_1(object sender, EventArgs e)
         {
             // Definindo a string de conexão
-            string connectionString = "Server=localhost;Port=3306;Database=db_cyber_security_lock;User ID=root;Password=;";
+            string connectionString = "Server=localhost;Port=3306;Database=cyber_security_lock;User ID=root;Password=;";
 
             try
             {
@@ -32,7 +32,7 @@ namespace Cyber_Security_Lock__P.I._
                     conn.Open();
 
                     // Consulta SQL para selecionar todos os clientes
-                    string query = "SELECT id , nome, email, CPF, usuario FROM tb_user";
+                    string query = "SELECT * FROM tb_user ";
 
                     // Cria o comando MySQL
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
@@ -71,7 +71,7 @@ namespace Cyber_Security_Lock__P.I._
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=localhost; Port=3306; Database=db_cyber_security_lock; Uid=root; Pwd=;";
+                    string connectionString = "Server=localhost; Port=3306; Database=cyber_security_lock; Uid=root; Pwd=;";
 
                     try
                     {
