@@ -18,7 +18,7 @@ $dsn = 'mysql:dbname=cyber_security_lock;host=localhost';
 $user = 'root';
 $password = '';
 
-try {
+try {   
     $banco = new PDO($dsn, $user, $password);
     $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

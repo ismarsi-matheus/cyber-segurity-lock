@@ -55,7 +55,7 @@ namespace Cyber_Security_Lock__P.I._
             if (VerSenhaTxt == false)
             {
                 textBox_senha.UseSystemPasswordChar = false;  //Define a senha para visível
-                VerSenhaTxt = true;
+                VerSenhaTxt = true; 
                 button_exibirSenha.Text = "Ocultar Senha";
             }
             else
@@ -64,6 +64,11 @@ namespace Cyber_Security_Lock__P.I._
                 VerSenhaTxt = false;
                 button_exibirSenha.Text = "Mostrar Senha";
             }
+        }
+
+        private void textBox_senha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
