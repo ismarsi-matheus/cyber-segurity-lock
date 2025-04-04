@@ -1,18 +1,17 @@
 <?php
-session_start(); // Inicia a sessão
+session_start();
 
-// Verifica se o usuário está logado
 if (!isset($_SESSION['id_user'])) {
-    header('Location: login.php'); // Redireciona se não estiver logado
+    header('Location: login.php');
     exit();
 }
 
-$id_user = $_SESSION['id_user']; // Obtém o ID do usuário logado
+$id_user = $_SESSION['id_user'];
 
 $id = $_POST["id"];
 $dominio = $_POST["dominio"];
 $usuario = $_POST["usuario"];
-$senha = $_POST["senha"];
+$senha = base64_encode($_POST["senha"]); // Codificando com Base64
 $nota = $_POST["nota"];
 
 $dsn = 'mysql:dbname=cyber_security_lock;host=localhost';
@@ -21,7 +20,9 @@ $password = '';
 
 $banco = new PDO($dsn, $user, $password);
 
-$update = 'UPDATE tb_senha SET dominio = :dominio, usuario = :usuario, senha = :senha, nota = :nota WHERE id = :id AND id_user = :id_user';
+$update = 'UPDATE tb_senha 
+           SET dominio = :dominio, usuario = :usuario, senha = :senha, nota = :nota 
+           WHERE id = :id AND id_user = :id_user';
 
 $box = $banco->prepare($update);
 
@@ -38,4 +39,3 @@ echo '<script>
         alert("Informações atualizadas com sucesso!!");
         window.location.replace("tela_inicial.php");
     </script>';
-?>

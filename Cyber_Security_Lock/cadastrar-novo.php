@@ -27,15 +27,15 @@ $box->execute([
 $id_pessoaCadastro = $banco->lastInsertId();
 $id_senhaCadastro = $banco->lastInsertId();
 
-$insert = 'INSERT INTO tb_user (usuario, senha, id_pessoa, id_senha) VALUE (:usuario, :senha, :id_pessoa, :id_senha)';
+$insert = 'INSERT INTO tb_user (usuario, senha, id_pessoa) VALUE (:usuario, :senha, :id_pessoa)';
 
 $box = $banco->prepare($insert);
 
 $box->execute([
     ':usuario' => $usuarioCadastro,
     ':senha' => $senhaCadastro,
-    ':id_pessoa' => $id_pessoaCadastro,
-    ':id_senha' => $id_senhaCadastro
+    ':id_pessoa' => $id_pessoaCadastro
+    
 ]);
 
 echo '<script>

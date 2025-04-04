@@ -1,17 +1,16 @@
 <?php
-session_start(); // Inicia a sessão
+session_start();
 
-// Verifica se o usuário está logado
 if (!isset($_SESSION['id_user'])) {
-    header('Location: login.php'); // Redireciona se não estiver logado
+    header('Location: login.php');
     exit();
 }
 
-$id_user = $_SESSION['id_user']; // Obtém o ID do usuário logado
+$id_user = $_SESSION['id_user'];
 
 $nome_dominio = $_POST["dominio"];
 $nome_usuario = $_POST["usuario"];
-$senha_dominio = $_POST["senha"];
+$senha_dominio = base64_encode($_POST["senha"]); // Codificando com Base64
 $nota_usuario = $_POST["nota"];
 
 $dsn = 'mysql:dbname=cyber_security_lock;host=localhost';
@@ -22,7 +21,8 @@ try {
     $banco = new PDO($dsn, $user, $password);
     $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $insert = 'INSERT INTO tb_senha (dominio, usuario, senha, nota, id_user) VALUES (:dominio, :usuario, :senha, :nota, :id_user)';
+    $insert = 'INSERT INTO tb_senha (dominio, usuario, senha, nota, id_user) 
+               VALUES (:dominio, :usuario, :senha, :nota, :id_user)';
 
     $box = $banco->prepare($insert);
 
@@ -41,4 +41,5 @@ try {
 } catch (PDOException $e) {
     echo 'Erro: ' . $e->getMessage();
 }
+
 ?>

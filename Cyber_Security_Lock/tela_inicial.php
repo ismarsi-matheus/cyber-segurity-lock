@@ -71,7 +71,7 @@
                         $usuario = htmlspecialchars($row['usuario']);
                         $senha = htmlspecialchars($row['senha']);
                         $nota = htmlspecialchars($row['nota']);
-
+                        $senhadobalacubaco = base64_decode($row['senha']);
                         // Oculta a senha com asteriscos para mais segurança
                         $senha_oculta = str_repeat('*', strlen($senha));
 
@@ -106,7 +106,7 @@
                                     <div class="modal-body">
                                         <p><strong>Domínio:</strong> {$dominio}</p>
                                         <p><strong>Usuário:</strong> {$usuario}</p>
-                                        <p><strong>Senha:</strong> {$senha}</p>
+                                        <p><strong>Senha:</strong>  {$senhadobalacubaco}</p>
                                         <p><strong>Nota:</strong> {$nota}</p>
                                     </div>
                                     <div class="modal-footer">
@@ -137,7 +137,8 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="senha{$id}" class="form-label">Senha</label>
-                                                <input type="password" class="form-control" id="senha{$id}" name="senha" value="{$senha}">
+                                                <input type="text" class="form-control" id="senha{$id}" name="senha" value="{$senhadobalacubaco}">
+
                                             </div>
                                             <div class="mb-3">
                                                 <label for="nota{$id}" class="form-label">Nota</label>
