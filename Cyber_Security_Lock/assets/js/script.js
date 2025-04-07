@@ -43,30 +43,4 @@ document.addEventListener('DOMContentLoaded', function() {
         passwordInput.value = localStorage.getItem('password');
         rememberCheckbox.checked = true;
     }
-
-    // Atualizar localStorage quando o checkbox mudar
-    rememberCheckbox.addEventListener('change', function() {
-        if (this.checked) {
-            localStorage.setItem('remember', 'true');
-            localStorage.setItem('username', userInput.value);
-            localStorage.setItem('password', passwordInput.value);
-        } else {
-            localStorage.setItem('remember', 'false');
-            localStorage.removeItem('username');
-            localStorage.removeItem('password');
-        }
-    });
-
-    // Atualizar localStorage quando o usuário ou senha mudar
-    userInput.addEventListener('input', function() {
-        if (rememberCheckbox.checked) {
-            localStorage.setItem('username', userInput.value);
-        }
-    });
-
-    passwordInput.addEventListener('input', function() {
-        if (rememberCheckbox.checked) {
-            localStorage.setItem('password', passwordInput.value);
-        }
-    });
 });
