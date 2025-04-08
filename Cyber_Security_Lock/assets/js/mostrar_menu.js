@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adicionando eventos para os botões do menu
     document.getElementById('filterAZ').addEventListener('click', () => {
-        alert('Filtro de A-Z selecionado');
+        
         dropdownMenu.style.display = 'none'; // Fecha o menu após a seleção
     });
 
     document.getElementById('filterDate').addEventListener('click', () => {
-        alert('Filtro por Data de Modificação selecionado');
+        
         dropdownMenu.style.display = 'none'; // Fecha o menu após a seleção
     });
 
@@ -24,3 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const filterAZ = document.getElementById("filterAZ");
+    const filterDate = document.getElementById("filterDate");
+
+    if (filterAZ) {
+        filterAZ.addEventListener("click", () => {
+            window.location.href = "tela_inicial.php?order=az";
+        });
+    }
+
+    if (filterDate) {
+        filterDate.addEventListener("click", () => {
+            window.location.href = "tela_inicial.php?order=data";
+        });
+    }
+});
+

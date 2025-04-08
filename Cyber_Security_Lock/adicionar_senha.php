@@ -31,7 +31,7 @@
             </div>
             <div class="input-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Digite sua senha" name="senha">
+                <input type="text" id="senha" placeholder="Digite sua senha" name="senha">
             </div>
             <div class="input-group">
                 <label for="nota">Nota</label>

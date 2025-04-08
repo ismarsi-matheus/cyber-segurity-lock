@@ -54,11 +54,24 @@
                     $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
                     // Busca todas as senhas do usuário logado
+                    $orderBy = 'dominio'; // padrão A-Z
+                    if (isset($_GET['order'])) {
+                        if ($_GET['order'] === 'data') {
+                            $orderBy = 'data_modificacao DESC';
+                        } elseif ($_GET['order'] === 'az') {
+                            $orderBy = 'dominio ASC';
+                        }
+                    }
+
+
                     $query_senha = "
-                        SELECT id, dominio, usuario, senha, nota 
-                        FROM tb_senha
-                        WHERE id_user = :id_user
-                    ";
+    SELECT id, dominio, usuario, senha, nota, data_modificacao 
+    FROM tb_senha
+    WHERE id_user = :id_user
+    ORDER BY $orderBy
+";
+
+
 
                     $consulta_senha = $banco->prepare($query_senha);
                     $consulta_senha->bindParam(':id_user', $id_user, PDO::PARAM_INT);
