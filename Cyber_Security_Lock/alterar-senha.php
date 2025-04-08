@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
     if ($nova_senha !== $confirmar_senha) {
         echo '<script>
             alert("As senhas não coincidem.");
-            window.location.replace="esqueci-senha.php";
+            window.location.href = "esqueci_senha.php";
         </script>';
         exit();
     }
@@ -18,28 +18,28 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
 
     $banco = new PDO($dsn, $user, $password);
 
-    $script = "SELECT id FROM tb_pessoa WHERE cpf = '{$cpf}'";
-    $resultado = $banco->query($script)->fetch();
+    $resultado = $banco->query("SELECT id FROM tb_pessoa WHERE cpf = '{$cpf}'")->fetch();
 
     if ($resultado) {
         $id_pessoa = $resultado['id'];
-        $update_script = "UPDATE tb_user SET senha = '{$nova_senha}' WHERE id_pessoa = {$id_pessoa}";
 
-        if ($banco->exec($update_script)) {
+        $sucesso = $banco->exec("UPDATE tb_user SET senha = '{$nova_senha}' WHERE id_pessoa = {$id_pessoa}");
+
+        if ($sucesso) {
             echo '<script>
                 alert("Senha alterada com sucesso.");
-                window.location.replace="login.php";
+                window.location.href = "login.php";
             </script>';
         } else {
             echo '<script>
                 alert("Erro ao alterar a senha.");
-                window.location.replace="esqueci-senha.html";
+                window.location.href = "esqueci_senha.php";
             </script>';
         }
     } else {
         echo '<script>
             alert("CPF não encontrado.");
-            window.location.replace="esqueci-senha.html";
+            window.location.href = "esqueci_senha.php";
         </script>';
     }
 }

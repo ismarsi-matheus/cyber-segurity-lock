@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* Corpo com fundo menos escuro */
 body {
     background: url(../img/introducao.png);
     background-size: cover;
@@ -10,11 +11,40 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    background-size: cover;
     position: relative;
 }
 
-/* Centralização da Esfera e Logo */
+/* Camada de escurecimento mais leve */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(10, 10, 10, 0.3));
+    z-index: 1;
+}
+
+/* Botão de login no canto */
+.corner_login {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid #00f0ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.corner_login:hover {
+    background: rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+/* Seção principal */
 #esfera_360 {
     display: flex;
     justify-content: center;
@@ -26,11 +56,26 @@ body {
     z-index: 2;
 }
 
+/* Conteúdo central: esfera + botão */
+.conteudo_central {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Esfera girando */
+.esfera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .animacao {
     width: 500px;
     height: 500px;
-    
-    background-position: center;
     animation: rotate 45s linear infinite;
 }
 
@@ -43,63 +88,139 @@ body {
     }
 }
 
-/* Botão de Login */
-.btn_login {
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    z-index: 3;
+/* Botão com imagem */
+.btn_login_imagem {
     position: absolute;
-    top: 47%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/btn_inicial.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 4;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 
-/* Texto Centralizado */
-h1 {
+/* Conteúdo do hover */
+.conteudo_hover {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    gap: 8px;
     z-index: 4;
-    font-size: 80px;
+}
+
+.conteudo_hover i {
+    font-size: 2rem;
+}
+
+.btn_login_imagem:hover {
+    background: rgba(0, 240, 255, 0.1);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.btn_login_imagem:hover .conteudo_hover {
+    display: flex;
+}
+
+/* Texto principal */
+.logo_login {
+    margin-top: 40px;
+    text-align: center;
+    z-index: 4;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 80px);
     background-image: linear-gradient(to bottom, hwb(293 22% 18%), rgb(3, 195, 253));
     -webkit-background-clip: text;
     color: transparent;
-    transform: scaleX(1.5);
-    position: relative;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Ícones agora no canto inferior esquerdo */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 32px;
+.slogan {
+    color: #fff;
+    font-size: 1.2rem;
 }
 
-.footer .icons i {
-    color: #1F2937;
-    margin-right: 16px;
-    font-size: 20px;
-    transition: 0.3s;
-    cursor: pointer;
+/* Animação de digitação */
+.slogan {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 50px;
+    max-width: 100%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.footer .icons i:hover {
-    color: #ffffff;
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-/* Botões do Rodapé */
-.footer .buttons button {
-    background: #1F2937;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+@keyframes blink {
+    50% { border-color: transparent; }
 }
 
-.footer .buttons button:hover {
-    background: #374151;
+/* Botão central pulsando */
+.btn_login_imagem {
+    animation: pulse 2s ease-in-out infinite;
+
 }
 
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 rgba(0, 240, 255, 0.7);
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 240, 255, 0.7);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 rgba(0, 240, 255, 0.7);
+    }
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 100%;
+    }
+    60% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

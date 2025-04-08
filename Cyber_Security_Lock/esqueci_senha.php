@@ -25,7 +25,7 @@
                 </div>
                 
                 <div class="input_box">
-                    <input type="password" id="senha2" placeholder="Confirme a nova senha" required>
+                    <input type="password" id="senha2" placeholder="Confirme a nova senha" name="confirmar_senha" required>
                     <i class="bi bi-eye-slash" id="toggleSenha2"></i>
                 </div>                
 
