@@ -31,6 +31,7 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
 - **Front-end:** HTML, CSS, JavaScript
 - **Back-end:** PHP
 - **Banco de Dados:** MySQL
+- **Framework:** Bootstrap
 
 ## ⚡ Funcionalidades
 
@@ -98,8 +99,6 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
   - WhatsApp ✅
   - Email ✅
   - Instagram ✅
-  - Twitter ❌ (Em desenvolvimento)
-  - LinkedIn ❌ (Em desenvolvimento)
 - Links para **Suporte** e **Sobre Nós**.
 - Direitos autorais: "Todos os direitos reservados" no rodapé de todas as páginas.
 
