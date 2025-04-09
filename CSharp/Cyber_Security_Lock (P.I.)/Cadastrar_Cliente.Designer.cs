@@ -41,6 +41,8 @@
             this.button_cadastrar = new System.Windows.Forms.Button();
             this.button_voltar = new System.Windows.Forms.Button();
             this.labelAlert = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox_senha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -153,7 +155,7 @@
             // button_cadastrar
             // 
             this.button_cadastrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_cadastrar.Location = new System.Drawing.Point(376, 512);
+            this.button_cadastrar.Location = new System.Drawing.Point(377, 556);
             this.button_cadastrar.Name = "button_cadastrar";
             this.button_cadastrar.Size = new System.Drawing.Size(81, 40);
             this.button_cadastrar.TabIndex = 6;
@@ -164,7 +166,7 @@
             // button_voltar
             // 
             this.button_voltar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_voltar.Location = new System.Drawing.Point(497, 512);
+            this.button_voltar.Location = new System.Drawing.Point(489, 556);
             this.button_voltar.Name = "button_voltar";
             this.button_voltar.Size = new System.Drawing.Size(81, 40);
             this.button_voltar.TabIndex = 7;
@@ -181,11 +183,35 @@
             this.labelAlert.Size = new System.Drawing.Size(0, 13);
             this.labelAlert.TabIndex = 8;
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(28, 499);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 27);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Senha";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // textBox_senha
+            // 
+            this.textBox_senha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_senha.Location = new System.Drawing.Point(297, 504);
+            this.textBox_senha.Name = "textBox_senha";
+            this.textBox_senha.Size = new System.Drawing.Size(380, 22);
+            this.textBox_senha.TabIndex = 10;
+            // 
             // Cadastrar_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 608);
+            this.Controls.Add(this.textBox_senha);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.labelAlert);
             this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.button_cadastrar);
@@ -221,5 +247,7 @@
         private System.Windows.Forms.Button button_cadastrar;
         private System.Windows.Forms.Button button_voltar;
         private System.Windows.Forms.Label labelAlert;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox_senha;
     }
 }

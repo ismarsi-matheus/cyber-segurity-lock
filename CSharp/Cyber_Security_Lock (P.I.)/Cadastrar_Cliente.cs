@@ -37,98 +37,63 @@ namespace Cyber_Security_Lock__P.I._
 
 
         private void button_cadastrar_Click(object sender, EventArgs e)
-        {                     
-                
-
-
-
+        {
             string cpf = maskedTextBox_CPF.Text;
 
-            if (ValidarCpf(cpf))
-            {
-                labelAlert.Text = "CPF Válido";
-                labelAlert.ForeColor = Color.Green;
-            }
-            else
+            if (!ValidarCpf(cpf))
             {
                 labelAlert.Text = "CPF INVÁLIDO";
                 labelAlert.ForeColor = Color.Red;
                 maskedTextBox_CPF.Text = "";
                 maskedTextBox_CPF.Focus();
+                return;
             }
 
-            //Define sua string de conexão com o banco
+            labelAlert.Text = "CPF Válido";
+            labelAlert.ForeColor = Color.Green;
+
             string conexaoString = "Server=localhost; Port=3306; Database=cyber_security_lock; Uid=root; Pwd=;";
-
-            //Defina a inserção de registro no BD
-
-            string queryPessoa = "INSERT INTO tb_pessoa (nome, cpf, email) VALUES (@nome, @CPF,@email)";
-
-            string queryUser = "INSERT INTO tb_user (usuario) VALUES (@usuario)";
-
-            //Crie uma conexão com o BD
+            string queryPessoa = "INSERT INTO tb_pessoa (nome, cpf, email) VALUES (@nome, @CPF, @email)";
+            string queryUser = "INSERT INTO tb_user (usuario, senha, id_pessoa) VALUES (@usuario, @senha, @id_pessoa)";
 
             using (MySqlConnection conexao = new MySqlConnection(conexaoString))
             {
                 try
                 {
-                    //Abre a conexao
                     conexao.Open();
 
-                    //Crie o comenado SQL
+                    // Primeiro INSERT na tabela tb_pessoa
                     using (MySqlCommand comando = new MySqlCommand(queryPessoa, conexao))
                     {
-                        //Adicionar os parâmetros com os valores dos TexBox
                         comando.Parameters.AddWithValue("@nome", textBox_nome.Text);
                         comando.Parameters.AddWithValue("@email", textBox_email.Text);
                         comando.Parameters.AddWithValue("@CPF", maskedTextBox_CPF.Text);
-                        
-                        //Executa o comando de inserção
 
                         comando.ExecuteNonQuery();
 
-                        MessageBox.Show("Dados inseridos com sucesso!");
+                        // Obter o ID gerado automaticamente
+                        long idPessoaInserido = comando.LastInsertedId;
 
-                        using (MySqlConnection conexao2 = new MySqlConnection(conexaoString))
+                        // Segundo INSERT na tabela tb_user
+                        using (MySqlCommand comando2 = new MySqlCommand(queryUser, conexao))
                         {
-                            try
-                            {
-                                //Abre a conexao
-                                conexao2.Open();
+                            comando2.Parameters.AddWithValue("@usuario", textBox_usuario.Text);
+                            comando2.Parameters.AddWithValue("@senha", textBox_senha.Text);
+                            comando2.Parameters.AddWithValue("@id_pessoa", idPessoaInserido);
 
-                                //Crie o comenado SQL
-                                using (MySqlCommand comando2 = new MySqlCommand(queryUser, conexao2))
-                                {
-                                    //Adicionar os parâmetros com os valores dos TexBox
-                                    comando2.Parameters.AddWithValue("@usuario", textBox_usuario.Text);
-
-
-                                    //Executa o comando de inserção
-
-                                    comando2.ExecuteNonQuery();
-
-                                    
-                                }
-                            }
-
-                            catch (Exception ex)
-                            {
-                                //em caso de erro, exiba mensagem de erro
-                                MessageBox.Show("Erro: " + ex.Message);
-                            }
+                            comando2.ExecuteNonQuery();
                         }
+
+                        MessageBox.Show("Cliente cadastrado com sucesso!");
                     }
                 }
-
                 catch (Exception ex)
                 {
-                    //em caso de erro, exiba mensagem de erro
                     MessageBox.Show("Erro: " + ex.Message);
                 }
             }
-
-            
         }
+
         private void button_voltar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -189,6 +154,9 @@ namespace Cyber_Security_Lock__P.I._
             return digito2 == int.Parse(cpf[10].ToString());
         }
 
-       
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

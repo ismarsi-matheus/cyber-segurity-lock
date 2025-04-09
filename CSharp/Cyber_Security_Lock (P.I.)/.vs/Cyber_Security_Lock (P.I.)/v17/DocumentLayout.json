@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\cadastrar_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|c:\\xampp\\htdocs\\cyber-segurity-lock\\csharp\\cyber_security_lock (p.i.)\\pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|c:\\xampp\\htdocs\\cyber-segurity-lock\\csharp\\cyber_security_lock (p.i.)\\pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:pesquisar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|c:\\xampp\\htdocs\\cyber-segurity-lock\\csharp\\cyber_security_lock (p.i.)\\cadastrar_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:cadastrar_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|c:\\xampp\\htdocs\\cyber-segurity-lock\\csharp\\cyber_security_lock (p.i.)\\tela_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:tela_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:gerenciamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\tela_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:tela_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|c:\\xampp\\htdocs\\cyber-segurity-lock\\csharp\\cyber_security_lock (p.i.)\\cadastrar_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69641D11-16B7-408F-B14A-C44D7DA0B824}|Cyber_Security_Lock (P.I.).csproj|solutionrelative:cadastrar_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,128 +26,57 @@
       "DocumentGroups": [
         {
           "DockedHeight": 340,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\packages.config",
-              "RelativeDocumentMoniker": "packages.config",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\packages.config",
-              "RelativeToolTip": "packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-03T11:55:05.271Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "DocumentIndex": 3,
+              "Title": "Cadastrar_Cliente.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Cadastrar_Cliente.cs",
+              "RelativeDocumentMoniker": "Cadastrar_Cliente.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Cadastrar_Cliente.cs",
+              "RelativeToolTip": "Cadastrar_Cliente.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAxwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:43:02.954Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Cadastrar_Cliente.cs [Design]",
               "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Cadastrar_Cliente.cs",
               "RelativeDocumentMoniker": "Cadastrar_Cliente.cs",
               "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Cadastrar_Cliente.cs [Design]",
               "RelativeToolTip": "Cadastrar_Cliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:54:58.985Z",
+              "WhenOpened": "2025-04-09T16:42:57.994Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Tela_Inicial.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Tela_Inicial.cs",
-              "RelativeDocumentMoniker": "Tela_Inicial.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Tela_Inicial.cs [Design]",
-              "RelativeToolTip": "Tela_Inicial.cs [Design]",
+              "Title": "Pesquisar.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs",
+              "RelativeDocumentMoniker": "Pesquisar.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs",
+              "RelativeToolTip": "Pesquisar.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:54:45.574Z",
+              "WhenOpened": "2025-04-09T15:29:43.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pesquisar.cs [Design]",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs",
+              "RelativeDocumentMoniker": "Pesquisar.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Pesquisar.cs [Design]",
+              "RelativeToolTip": "Pesquisar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:29:41.284Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:25:25.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Gerenciamento.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs",
-              "RelativeDocumentMoniker": "Gerenciamento.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs [Design]",
-              "RelativeToolTip": "Gerenciamento.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T14:30:55.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Gerenciamento.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs",
-              "RelativeDocumentMoniker": "Gerenciamento.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Gerenciamento.cs",
-              "RelativeToolTip": "Gerenciamento.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAIAwwE8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T14:30:58.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Tela_Inicial.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Tela_Inicial.cs",
-              "RelativeDocumentMoniker": "Tela_Inicial.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Tela_Inicial.cs",
-              "RelativeToolTip": "Tela_Inicial.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAewBsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:55:34.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAMwDkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:25:31.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\cyber-segurity-lock\\CSharp\\Cyber_Security_Lock (P.I.)\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:55:09.034Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 52,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

@@ -30,22 +30,25 @@ namespace Cyber_Security_Lock__P.I._
 
         }
 
-        
+
 
         private void button_buscar_Click(object sender, EventArgs e)
         {
-            
-            string filtro = button_buscar.Text; // Pode ser CPF ou nome
+            string filtro = textBox_Pesquisar.Text;
             string conexao = "server=localhost;database=cyber_security_lock;uid=root;pwd=;";
 
             using (MySqlConnection conn = new MySqlConnection(conexao))
             {
                 conn.Open();
 
-                string sql = "SELECT u.id, u.usuario, u.senha FROM tb_user u JOIN tb_pessoa p ON u.id_pessoa = p.id WHERE p.cpf = '' ";
-
+                string sql = @"SELECT u.id, u.usuario, u.senha, p.nome, p.email, p.cpf 
+                       FROM tb_user u 
+                       JOIN tb_pessoa p ON u.id_pessoa = p.id 
+                       WHERE p.cpf = @filtro OR p.nome LIKE CONCAT('%', @filtro, '%')";
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@filtro", filtro);
+
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 if (reader.Read())
@@ -55,8 +58,6 @@ namespace Cyber_Security_Lock__P.I._
                     textBox_email.Text = reader["email"].ToString();
                     textBox_CPF.Text = reader["cpf"].ToString();
                     textBox_senha.Text = reader["senha"].ToString();
-
-                    // Guardar ID em tag (útil pro UPDATE)
                     textBox_usuario.Tag = reader["id"];
                 }
                 else
@@ -67,11 +68,6 @@ namespace Cyber_Security_Lock__P.I._
                 conn.Close();
             }
         }
-
-            
-
-
-        
 
         private void button_fechar_Click(object sender, EventArgs e)
         {
@@ -109,15 +105,26 @@ namespace Cyber_Security_Lock__P.I._
             {
                 conn.Open();
 
-                // Atualiza dados do usuário
-                string updateUsuario = $@"UPDATE tb_user u
+                string updateSql = @"
+            UPDATE tb_user u
             JOIN tb_pessoa p ON u.id_pessoa = p.id
-            SET u.usuario = '{usuario}', u.email = '{email}', u.senha = '{senha}',
-                p.nome = '{nome}', p.cpf = '{cpf}'
-            WHERE u.id = {idUsuario}
+            SET 
+                u.usuario = @usuario,
+                u.senha = @senha,
+                p.nome = @nome,
+                p.email = @email,
+                p.cpf = @cpf
+            WHERE u.id = @idUsuario
         ";
 
-                MySqlCommand cmd = new MySqlCommand(updateUsuario, conn);
+                MySqlCommand cmd = new MySqlCommand(updateSql, conn);
+                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@senha", senha);
+                cmd.Parameters.AddWithValue("@nome", nome);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@cpf", cpf);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+
                 int linhasAfetadas = cmd.ExecuteNonQuery();
 
                 if (linhasAfetadas > 0)
@@ -132,6 +139,20 @@ namespace Cyber_Security_Lock__P.I._
                 conn.Close();
             }
         }
+
+        
+            private void button_limparCampos_Click(object sender, EventArgs e)
+        {
+            textBox_usuario.Clear();
+            textBox_nome.Clear();
+            textBox_email.Clear();
+            textBox_CPF.Clear();
+            textBox_senha.Clear();
+            textBox_Pesquisar.Clear();
+            textBox_usuario.Tag = null;
+        }
+
     }
-    }
+}
+
 
