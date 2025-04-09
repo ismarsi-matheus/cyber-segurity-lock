@@ -34,15 +34,15 @@ if (!isset($_SESSION['id_user'])) {
                 <li><strong>Tem mais alguma forma de proteger meus dados ainda mais?</strong> R: Sim, você não passar os seus dados para ninguém principalmente porque nunca vamos pedir seus dados de acesso </li>
             </ul>
 
-            <form action="enviar_pergunta.php" method="POST">
+            <form action="salvar_pergunta.php" method="POST">
                 <label for="question">Faça sua pergunta:</label>
-                <textarea id="question" name="pergunta" placeholder="Digite aqui sua dúvida..." rows="5" required></textarea>
-
+                <textarea id="question" name="pergunta" placeholder="Digite aqui..." required></textarea>
                 <div class="btn-container">
                     <button type="submit" class="btn">Enviar</button>
                     <a href="tela_inicial.php"><button type="button" class="btn">Voltar</button></a>
                 </div>
             </form>
+
 
 
         </div>

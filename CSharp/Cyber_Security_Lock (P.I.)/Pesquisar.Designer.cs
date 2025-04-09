@@ -40,8 +40,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_CPF = new System.Windows.Forms.TextBox();
             this.textBox_email = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.textBox_Pesquisar = new System.Windows.Forms.TextBox();
+            this.button_editar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +62,7 @@
             // 
             // button_buscar
             // 
-            this.button_buscar.Location = new System.Drawing.Point(891, 118);
+            this.button_buscar.Location = new System.Drawing.Point(865, 190);
             this.button_buscar.Name = "button_buscar";
             this.button_buscar.Size = new System.Drawing.Size(75, 40);
             this.button_buscar.TabIndex = 2;
@@ -105,7 +105,7 @@
             // button_fechar
             // 
             this.button_fechar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_fechar.Location = new System.Drawing.Point(891, 308);
+            this.button_fechar.Location = new System.Drawing.Point(865, 332);
             this.button_fechar.Name = "button_fechar";
             this.button_fechar.Size = new System.Drawing.Size(75, 40);
             this.button_fechar.TabIndex = 7;
@@ -145,20 +145,31 @@
             this.textBox_email.Size = new System.Drawing.Size(390, 20);
             this.textBox_email.TabIndex = 12;
             // 
-            // dataGridView1
+            // textBox_Pesquisar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(131, 362);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(525, 150);
-            this.dataGridView1.TabIndex = 13;
+            this.textBox_Pesquisar.Location = new System.Drawing.Point(772, 117);
+            this.textBox_Pesquisar.Name = "textBox_Pesquisar";
+            this.textBox_Pesquisar.Size = new System.Drawing.Size(247, 20);
+            this.textBox_Pesquisar.TabIndex = 14;
+            this.textBox_Pesquisar.TextChanged += new System.EventHandler(this.textBox_Pesquisar_TextChanged);
+            // 
+            // button_editar
+            // 
+            this.button_editar.Location = new System.Drawing.Point(865, 262);
+            this.button_editar.Name = "button_editar";
+            this.button_editar.Size = new System.Drawing.Size(75, 40);
+            this.button_editar.TabIndex = 15;
+            this.button_editar.Text = "EDITAR";
+            this.button_editar.UseVisualStyleBackColor = true;
+            this.button_editar.Click += new System.EventHandler(this.button_editar_Click);
             // 
             // Pesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1142, 609);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button_editar);
+            this.Controls.Add(this.textBox_Pesquisar);
             this.Controls.Add(this.textBox_email);
             this.Controls.Add(this.textBox_CPF);
             this.Controls.Add(this.label5);
@@ -173,7 +184,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Pesquisar";
             this.Text = "Pesquisar";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +203,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_CPF;
         private System.Windows.Forms.TextBox textBox_email;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox_Pesquisar;
+        private System.Windows.Forms.Button button_editar;
     }
 }
