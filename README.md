@@ -20,7 +20,11 @@ Projeto de programação desenvolvido por **Antônio Gabriel** e **Matheus Leona
 
 ## 🛡 Sobre o Projeto
 
-O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas que permite aos usuários armazenar e gerenciar suas credenciais de forma segura. O sistema possui autenticação e criptografia para garantir a proteção dos dados.
+O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas projetado para ser uma solução prática e segura para o armazenamento de credenciais. Ele oferece aos usuários uma interface amigável para armazenar, organizar e proteger suas informações sensíveis, utilizando práticas modernas de segurança como autenticação e criptografia.
+
+### Objetivo do Projeto
+
+O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários finais uma solução completa para gerenciar suas senhas e informações pessoais de forma segura, minimizando riscos de exposição de dados e facilitando o acesso às credenciais armazenadas. Este projeto também serve como um estudo prático de tecnologias e boas práticas de desenvolvimento web.
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -82,12 +86,12 @@ O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas que permite a
    - Clique em **Suporte** → Abre a **Tela de Suporte**
 
 ## ✅ Validações
-| Campo | Validação |
-|--------|--------------------------------|
-| Email | Deve ser um email válido |
-| Senha | Mínimo de 8 caracteres, com letras maiúsculas, minúsculas e números |
-| CPF | Formato válido e não repetido |
-| Confirmação de Senha | Deve ser idêntica à senha informada |
+| Campo               | Validação                                   |
+|---------------------|---------------------------------------------|
+| Email               | Deve ser um email válido                   |
+| Senha               | Mínimo de 8 caracteres, com letras maiúsculas, minúsculas e números |
+| CPF                 | Formato válido e não repetido              |
+| Confirmação de Senha | Deve ser idêntica à senha informada        |
 
 ## 📌 Rodapé e Recursos Comuns
 - Ícones de redes sociais:
@@ -101,4 +105,3 @@ O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas que permite a
 
 ## 📜 Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
-
