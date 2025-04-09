@@ -41,3 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.querySelector("input[name='pesquisa']");
+    const listaSenhas = document.querySelector(".lista-senhas");
+
+    if (input && listaSenhas) {
+        input.addEventListener("keyup", function () {
+            const valor = input.value;
+            const order = new URLSearchParams(window.location.search).get("order") || "az";
+
+            fetch(`buscar_senhas.php?pesquisa=${encodeURIComponent(valor)}&order=${order}`)
+                .then(res => res.text())
+                .then(html => {
+                    listaSenhas.innerHTML = html;
+                })
+                .catch(error => console.error("Erro na pesquisa:", error));
+        });
+    }
+});
+
+

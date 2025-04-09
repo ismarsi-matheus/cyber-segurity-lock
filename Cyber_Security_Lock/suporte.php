@@ -1,3 +1,13 @@
+<?php
+session_start(); // Inicia a sessão
+
+// Verifica se o usuário está logado
+if (!isset($_SESSION['id_user'])) {
+    header('Location: login.php'); // Redireciona se não estiver logado
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -24,11 +34,16 @@
                 <li><strong>Tem mais alguma forma de proteger meus dados ainda mais?</strong> R: Sim, você não passar os seus dados para ninguém principalmente porque nunca vamos pedir seus dados de acesso </li>
             </ul>
 
-            <label for="question">Faça sua pergunta:</label>
-            <input type="text" id="question" placeholder="Digite aqui">
-            <div class="btn-container">
-                <a href="tela_inicial.php"><button class="btn">Voltar</button></a>
-            </div>
+            <form action="enviar_pergunta.php" method="POST">
+                <label for="question">Faça sua pergunta:</label>
+                <textarea id="question" name="pergunta" placeholder="Digite aqui sua dúvida..." rows="5" required></textarea>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn">Enviar</button>
+                    <a href="tela_inicial.php"><button type="button" class="btn">Voltar</button></a>
+                </div>
+            </form>
+
 
         </div>
     </div>

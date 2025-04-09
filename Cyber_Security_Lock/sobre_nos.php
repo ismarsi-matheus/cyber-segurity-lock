@@ -1,3 +1,13 @@
+<?php
+session_start(); // Inicia a sessão
+
+                // Verifica se o usuário está logado
+                if (!isset($_SESSION['id_user'])) {
+                    header('Location: login.php'); // Redireciona se não estiver logado
+                    exit();
+                }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

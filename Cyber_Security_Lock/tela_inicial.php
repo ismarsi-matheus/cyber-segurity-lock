@@ -21,10 +21,13 @@
         <!-- Cabeçalho -->
         <section class="header">
             <a href="adicionar_senha.php" class="adicionar_senha"><i class="bi bi-plus-circle"></i></a>
-            <div class="search-bar">
-                <input type="text" placeholder="Pesquisar aqui">
-                <i class="bi bi-search"></i>
-            </div>
+            <form method="GET" action="tela_inicial.php" class="search-bar">
+                <input type="text" name="pesquisa" placeholder="Pesquisar aqui" value="<?= isset($_GET['pesquisa']) ? htmlspecialchars($_GET['pesquisa']) : '' ?>">
+                <button type="submit" style="background: none; border: none;">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
             <div class="menu-container">
                 <i class="bi bi-list menu-icon"></i>
                 <div class="dropdown-menu" id="dropdownMenu">
@@ -52,9 +55,9 @@
                 try {
                     $banco = new PDO('mysql:dbname=cyber_security_lock;host=localhost', 'root', '');
                     $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                    // Busca todas as senhas do usuário logado
-                    $orderBy = 'dominio'; // padrão A-Z
+                
+                    // Pega ordenação (A-Z ou por data)
+                    $orderBy = 'dominio ASC'; // padrão
                     if (isset($_GET['order'])) {
                         if ($_GET['order'] === 'data') {
                             $orderBy = 'data_modificacao DESC';
@@ -62,22 +65,31 @@
                             $orderBy = 'dominio ASC';
                         }
                     }
-
-
-                    $query_senha = "
-    SELECT id, dominio, usuario, senha, nota, data_modificacao 
-    FROM tb_senha
-    WHERE id_user = :id_user
-    ORDER BY $orderBy
-";
-
-
-
-                    $consulta_senha = $banco->prepare($query_senha);
-                    $consulta_senha->bindParam(':id_user', $id_user, PDO::PARAM_INT);
-                    $consulta_senha->execute();
-
-                    // Exibe as senhas associadas ao usuário logado
+                
+                    // Pesquisa segura
+                    $pesquisa = isset($_GET['pesquisa']) ? trim($_GET['pesquisa']) : '';
+                
+                    if (!empty($pesquisa)) {
+                        $query_senha = "
+                            SELECT id, dominio, usuario, senha, nota, data_modificacao 
+                            FROM tb_senha
+                            WHERE id_user = ? AND dominio LIKE ?
+                            ORDER BY $orderBy
+                        ";
+                        $consulta_senha = $banco->prepare($query_senha);
+                        $consulta_senha->execute([$id_user, "%$pesquisa%"]);
+                    } else {
+                        $query_senha = "
+                            SELECT id, dominio, usuario, senha, nota, data_modificacao 
+                            FROM tb_senha
+                            WHERE id_user = ?
+                            ORDER BY $orderBy
+                        ";
+                        $consulta_senha = $banco->prepare($query_senha);
+                        $consulta_senha->execute([$id_user]);
+                    }
+                
+                    // Exibição dos resultados (sem alteração aqui)
                     while ($row = $consulta_senha->fetch(PDO::FETCH_ASSOC)) {
                         $id = $row['id'];
                         $dominio = htmlspecialchars($row['dominio']);
@@ -85,7 +97,6 @@
                         $senha = htmlspecialchars($row['senha']);
                         $nota = htmlspecialchars($row['nota']);
                         $senhadobalacubaco = base64_decode($row['senha']);
-                        // Oculta a senha com asteriscos para mais segurança
                         $senha_oculta = str_repeat('*', strlen($senha));
 
                         echo <<<HTML
@@ -216,7 +227,8 @@ HTML;
         </div>
     </section>
 
-    <script src="assets/js/mostrar_menu.js"></script>
+    <script src="assets/js/mostrar_menu.js"></script>   
+    
 </body>
 
 </html>
