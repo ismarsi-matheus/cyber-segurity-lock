@@ -77,8 +77,8 @@ git clone https://github.com/ismarsi-matheus/cyber-segurity-lock
 
 ## 🤝 Colaboradores
 
-- Matheus Ismarsi  
 - Antônio Gabriel
+- Matheus Ismarsi  
 
 
 ---
