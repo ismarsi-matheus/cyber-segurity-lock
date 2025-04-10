@@ -12,6 +12,7 @@ Projeto de programação desenvolvido por **Antônio Gabriel** e **Matheus Leona
   - [Tela de Redefinição de Senha](#tela-de-redefinição-de-senha)
   - [Tela de Usuário](#tela-de-usuário)
   - [Tela de Gerenciamento de Senhas](#tela-de-gerenciamento-de-senhas)
+  - [Funcionalidades - Aplicação C# (Administrativa)](#funcionalidades---aplicação-c-administrativa)
   - [Outras Telas](#outras-telas)
 - [Fluxo de Telas](#fluxo-de-telas)
 - [Validações](#validações)
@@ -24,7 +25,7 @@ O **Cyber-Security-Lock** é um sistema de gerenciamento de senhas projetado par
 
 ### Objetivo do Projeto
 
-O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários finais uma solução completa para gerenciar suas senhas e informações pessoais de forma segura, minimizando riscos de exposição de dados e facilitando o acesso às credenciais armazenadas. Este projeto também serve como um estudo prático de tecnologias e boas práticas de desenvolvimento web.
+O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários finais uma solução completa para gerenciar suas senhas e informações pessoais de forma segura, minimizando riscos de exposição de dados e facilitando o acesso às credenciais armazenadas. Este projeto também serve como um estudo prático de tecnologias e boas práticas de desenvolvimento web e desktop.
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -32,6 +33,7 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
 - **Back-end:** PHP
 - **Banco de Dados:** MySQL
 - **Framework:** Bootstrap
+- **Aplicação Administrativa:** C# (.NET Framework, Windows Forms)
 
 ## ⚡ Funcionalidades
 
@@ -67,6 +69,23 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
   - Opção para revelar senha ao clicar no ícone de "olho".
   - Filtros para ordenação alfabética e por data.
   - Função de pesquisa para localizar senhas rapidamente.
+
+### 🖥 Funcionalidades - Aplicação C# (Administrativa)
+
+A aplicação em C# (Windows Forms) tem como objetivo o gerenciamento administrativo dos usuários cadastrados no sistema.
+
+#### 👤 Cadastro de Usuários
+- Interface gráfica intuitiva para adicionar usuários ao sistema.
+- Campos: **Nome**, **Email**, **CPF**, **Usuário** e **Senha**.
+- Os dados são inseridos nas tabelas `tb_pessoa` e `tb_usuario` no banco MySQL.
+
+#### 📋 Listagem de Usuários
+- Exibe uma lista com todos os usuários registrados.
+- Os dados são buscados diretamente da tabela `tb_usuario` com junção aos dados da `tb_pessoa`.
+
+#### 🔍 Busca de Usuário
+- Permite buscar usuários por **Nome** ou **CPF**.
+- Filtragem rápida e eficiente para localizar registros específicos.
 
 ### 📌 Outras Telas
 - **Sobre Nós:** Explica o propósito do projeto e sua equipe.
