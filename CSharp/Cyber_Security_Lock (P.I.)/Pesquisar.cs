@@ -35,7 +35,7 @@ namespace Cyber_Security_Lock__P.I._
         private void button_buscar_Click(object sender, EventArgs e)
         {
             string filtro = textBox_Pesquisar.Text;
-            string conexao = "server=localhost;database=cyber_security_lock;uid=root;pwd=;";
+            string conexao = "Server=82.180.153.103;Port=3306;Database=u531683190_cyber_security;User ID=u531683190_AntonioMatheus;Password=AntonioMatheus123;";
 
             using (MySqlConnection conn = new MySqlConnection(conexao))
             {
@@ -99,7 +99,7 @@ namespace Cyber_Security_Lock__P.I._
             string senha = textBox_senha.Text;
             string cpf = textBox_CPF.Text;
 
-            string conexao = "server=localhost;database=cyber_security_lock;uid=root;pwd=;";
+            string conexao = "Server=82.180.153.103;Port=3306;Database=u531683190_cyber_security;User ID=u531683190_AntonioMatheus;Password=AntonioMatheus123;";
 
             using (MySqlConnection conn = new MySqlConnection(conexao))
             {

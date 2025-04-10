@@ -21,7 +21,7 @@ namespace Cyber_Security_Lock__P.I._
         private void button_consultar_Click_1(object sender, EventArgs e)
         {
             // Definindo a string de conexão
-            string connectionString = "Server=localhost;Port=3306;Database=cyber_security_lock;User ID=root;Password=;";
+            string connectionString = "Server=82.180.153.103;Port=3306;Database=u531683190_cyber_security;User ID=u531683190_AntonioMatheus;Password=AntonioMatheus123;";
 
             try
             {
@@ -71,7 +71,7 @@ namespace Cyber_Security_Lock__P.I._
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=localhost; Port=3306; Database=cyber_security_lock; Uid=root; Pwd=;";
+                    string connectionString = "Server=82.180.153.103;Port=3306;Database=u531683190_cyber_security;User ID=u531683190_AntonioMatheus;Password=AntonioMatheus123;";
 
                     try
                     {

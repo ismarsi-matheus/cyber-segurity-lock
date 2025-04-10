@@ -52,7 +52,7 @@ namespace Cyber_Security_Lock__P.I._
             labelAlert.Text = "CPF Válido";
             labelAlert.ForeColor = Color.Green;
 
-            string conexaoString = "Server=localhost; Port=3306; Database=cyber_security_lock; Uid=root; Pwd=;";
+            string conexaoString = "Server=82.180.153.103;Port=3306;Database=u531683190_cyber_security;User ID=u531683190_AntonioMatheus;Password=AntonioMatheus123;";
             string queryPessoa = "INSERT INTO tb_pessoa (nome, cpf, email) VALUES (@nome, @CPF, @email)";
             string queryUser = "INSERT INTO tb_user (usuario, senha, id_pessoa) VALUES (@usuario, @senha, @id_pessoa)";
 
