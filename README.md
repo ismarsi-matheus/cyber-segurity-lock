@@ -44,7 +44,8 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
 ![GitHub language count](https://img.shields.io/github/languages/count/ismarsi-matheus/cyber-segurity-lock?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/ismarsi-matheus/cyber-segurity-lock?style=for-the-badge)
 
-<img src="https://magenta-nightingale-552810.hostingersite.com/assets/img/logo.png" alt="Cyber Security Lock" width="500">
+<img src="assets/img/cyber-security-lock.png" alt="Cyber Security Lock" width="500">
+
 
 > 💡 Codificação avançada na palma da sua mão!
 
