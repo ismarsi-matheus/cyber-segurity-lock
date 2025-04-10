@@ -1,3 +1,4 @@
+
 # Cyber-Security-Lock
 
 Projeto de programação desenvolvido por **Antônio Gabriel** e **Matheus Leonardo**.
@@ -35,91 +36,84 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
 - **Framework:** Bootstrap
 - **Aplicação Administrativa:** C# (.NET Framework, Windows Forms)
 
-## ⚡ Funcionalidades
 
-### 🔐 Tela de Login
-- **Campos:** Email e Senha
-- **Validação:**
-  - Verifica se os campos foram preenchidos.
-  - Confirma se as credenciais existem no banco de dados.
-- **Recursos:**
-  - Opção "Esqueceu a senha?" para redefinir credenciais.
 
-### 📝 Tela de Registro
-- **Campos:** Nome de Usuário, Email, CPF, Senha e Confirmação de Senha.
-- **Validação:**
-  - Verifica se os campos estão preenchidos corretamente.
-  - Validação de CPF.
-  - Confere se a senha atende aos critérios de segurança.
+# Cyber Security Lock
 
-### 🔄 Tela de Redefinição de Senha
-- **Campos:** CPF, Email, Nova Senha e Confirmação de Senha.
-- **Validação:**
-  - Confere se CPF e Email pertencem a um usuário válido.
-  - Exige que a nova senha tenha um formato seguro.
+![GitHub repo size](https://img.shields.io/github/repo-size/ismarsi-matheus/cyber-segurity-lock?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/ismarsi-matheus/cyber-segurity-lock?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/ismarsi-matheus/cyber-segurity-lock?style=for-the-badge)
 
-### 👤 Tela de Usuário
-- Exibe informações do usuário (Nome, Email, CPF, etc.).
-- Opção para editar perfil e alterar senha.
+<img src="https://magenta-nightingale-552810.hostingersite.com/assets/img/logo.png" alt="Cyber Security Lock" width="500">
 
-### 🔑 Tela de Gerenciamento de Senhas
-- **Recursos:**
-  - Exibe lista de senhas armazenadas com segurança.
-  - Senhas mascaradas com asteriscos.
-  - Opção para revelar senha ao clicar no ícone de "olho".
-  - Filtros para ordenação alfabética e por data.
-  - Função de pesquisa para localizar senhas rapidamente.
+> 💡 Codificação avançada na palma da sua mão!
 
-### 🖥 Funcionalidades - Aplicação C# (Administrativa)
+---
 
-A aplicação em C# (Windows Forms) tem como objetivo o gerenciamento administrativo dos usuários cadastrados no sistema.
+### 🔧 Ajustes e melhorias
 
-#### 👤 Cadastro de Usuários
-- Interface gráfica intuitiva para adicionar usuários ao sistema.
-- Campos: **Nome**, **Email**, **CPF**, **Usuário** e **Senha**.
-- Os dados são inseridos nas tabelas `tb_pessoa` e `tb_usuario` no banco MySQL.
+O projeto está em constante evolução! As próximas atualizações previstas incluem:
 
-#### 📋 Listagem de Usuários
-- Exibe uma lista com todos os usuários registrados.
-- Os dados são buscados diretamente da tabela `tb_usuario` com junção aos dados da `tb_pessoa`.
+- [x] Front-end responsivo com HTML, CSS e JavaScript
+- [x] Back-end em PHP com banco de dados MySQL
+- [x] Tela de login e sistema de autenticação
+- [x] Sistema de cadastro e gerenciamento de senhas
+- [x] Módulo de perguntas para suporte
+- [x] Modal de confirmação com JavaScript
+- [ ] Conexão da aplicação C# ao banco de dados web
+- [ ] Implementação de autenticação em dois fatores
+- [ ] Melhoria no sistema de logs e auditoria
 
-#### 🔍 Busca de Usuário
-- Permite buscar usuários por **Nome** ou **CPF**.
-- Filtragem rápida e eficiente para localizar registros específicos.
+---
 
-### 📌 Outras Telas
-- **Sobre Nós:** Explica o propósito do projeto e sua equipe.
-- **Suporte:** Respostas a perguntas frequentes e opção de contato.
-- **Adição de Senha:** Permite cadastrar novas credenciais.
-- **Detalhamento de Senha:** Exibe informações de uma senha específica.
+## 💻 Pré-requisitos
 
-## 🔄 Fluxo de Telas
-1. **Abertura do sistema** → Exibe a **Tela de Login**
-2. **Login bem-sucedido** → Redireciona para **Tela de Gerenciamento de Senhas**
-3. **Clique em "Esqueceu a senha?"** → Redireciona para **Tela de Redefinição de Senha**
-4. **Registro de novo usuário** → Após conclusão, redireciona para **Tela de Login**
-5. **No Gerenciador de Senhas:**
-   - Clique em **Adicionar Senha** → Abre a **Tela de Adição de Senha**
-   - Clique em uma senha → Abre a **Tela de Detalhamento de Senha**
-   - Clique em **Usuário** → Abre a **Tela de Usuário**
-   - Clique em **Sobre Nós** → Abre a **Tela de Sobre Nós**
-   - Clique em **Suporte** → Abre a **Tela de Suporte**
+A parte web do projeto já está hospedada e funcional. Para rodar o **sistema administrativo em C#** localmente, você precisará de:
 
-## ✅ Validações
-| Campo               | Validação                                   |
-|---------------------|---------------------------------------------|
-| Email               | Deve ser um email válido                   |
-| Senha               | Mínimo de 8 caracteres, com letras maiúsculas, minúsculas e números |
-| CPF                 | Formato válido e não repetido              |
-| Confirmação de Senha | Deve ser idêntica à senha informada        |
+- Windows 10 ou superior
+- Visual Studio com .NET Framework instalado
+- Conexão com a internet para acesso ao banco remoto hospedado na Hostinger
 
-## 📌 Rodapé e Recursos Comuns
-- Ícones de redes sociais:
-  - WhatsApp ✅
-  - Email ✅
-  - Instagram ✅
-- Links para **Suporte** e **Sobre Nós**.
-- Direitos autorais: "Todos os direitos reservados" no rodapé de todas as páginas.
+---
 
-## 📜 Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+## ☕ Acessando o Cyber Security Lock
+
+Acesse o sistema web diretamente no navegador através do link:
+
+👉 [https://magenta-nightingale-552810.hostingersite.com](https://magenta-nightingale-552810.hostingersite.com)
+
+Se quiser clonar e testar o repositório, use:
+
+```bash
+git clone https://github.com/ismarsi-matheus/cyber-segurity-lock
+```
+
+---
+
+## 🤝 Colaboradores
+
+Agradecemos à seguinte dupla que colaborou no desenvolvimento deste projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ismarsi-matheus">
+        <img src="https://avatars.githubusercontent.com/u/153258159?v=4" width="100px;" alt="Foto do Matheus Ismarsi"/>
+        <br />
+        <sub><b>Matheus Ismarsi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://via.placeholder.com/100x100.png?text=AG" width="100px;" alt="Foto do Antônio Gabriel"/>
+      <br />
+      <sub><b>Antônio Gabriel</b></sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📃 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
