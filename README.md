@@ -77,24 +77,9 @@ git clone https://github.com/ismarsi-matheus/cyber-segurity-lock
 
 ## 🤝 Colaboradores
 
-Agradecemos à seguinte dupla que colaborou no desenvolvimento deste projeto:
+- Matheus Ismarsi  
+- Antônio Gabriel
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ismarsi-matheus">
-        <img src="https://avatars.githubusercontent.com/u/153258159?v=4" width="100px;" alt="Foto do Matheus Ismarsi"/>
-        <br />
-        <sub><b>Matheus Ismarsi</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/100x100.png?text=AG" width="100px;" alt="Foto do Antônio Gabriel"/>
-      <br />
-      <sub><b>Antônio Gabriel</b></sub>
-    </td>
-  </tr>
-</table>
 
 ---
 
