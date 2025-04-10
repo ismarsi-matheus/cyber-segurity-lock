@@ -50,21 +50,6 @@ O objetivo principal do **Cyber-Security-Lock** é proporcionar aos usuários fi
 
 ---
 
-### 🔧 Ajustes e melhorias
-
-O projeto está em constante evolução! As próximas atualizações previstas incluem:
-
-- [x] Front-end responsivo com HTML, CSS e JavaScript
-- [x] Back-end em PHP com banco de dados MySQL
-- [x] Tela de login e sistema de autenticação
-- [x] Sistema de cadastro e gerenciamento de senhas
-- [x] Módulo de perguntas para suporte
-- [x] Modal de confirmação com JavaScript
-- [ ] Conexão da aplicação C# ao banco de dados web
-- [ ] Implementação de autenticação em dois fatores
-- [ ] Melhoria no sistema de logs e auditoria
-
----
 
 ## 💻 Pré-requisitos
 
